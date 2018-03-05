@@ -1,0 +1,14 @@
+1519297463717	geckodriver	INFO	geckodriver 0.19.1
+1519297463720	geckodriver	INFO	Listening on 127.0.0.1:60227
+error: Found argument '-e' which wasn't expected, or isn't valid in this context
+
+USAGE:
+    geckodriver -v
+
+For more information try --help
+1519297691233	geckodriver	INFO	geckodriver 0.19.1
+1519297691236	geckodriver	INFO	Listening on 127.0.0.1:50339
+1519300611124	geckodriver	INFO	geckodriver 0.19.1
+1519300611127	geckodriver	INFO	Listening on 127.0.0.1:48323
+1519301253331	geckodriver	INFO	geckodriver 0.19.1
+1519301253342	geckodriver	INFO	Listening on 127.0.0.1:54663
