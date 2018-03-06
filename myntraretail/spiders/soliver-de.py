@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy,re
-import json
+import json,os
 from myntraretail.items import MyntraretailItem,FashionDbItem
 from scrapy.http.request import Request
 import time
@@ -15,7 +15,7 @@ class SoliverDeSpider(scrapy.Spider):
     def parse(self, response):
         priority = 5000
         #print(response.url)
-        for category in  conf.CATEGORIES_GENDER_XPATHS:
+        for category in  conf.CATEGORIES_GENDER_XPATHS[:1]:
             for url in response.xpath(category['XPATH']).extract():
                 priority = priority - 1
                 if 'http' not in url:
@@ -27,6 +27,40 @@ class SoliverDeSpider(scrapy.Spider):
 
 
     def parseCategoryPage(self,response):
+        per_page_count = 12
+
+        try:
+            totalProductCount = int(response.xpath(".//div[@class='pagination']/ul/li[last()]/a/@href").extract()[0].split("=")[-1])
+        except:
+            totalProductCount = 0
+            pass
+
+        if totalProductCount>0:
+            totalPages = 2  #(totalProductCount / per_page_count)+1
+            start = 0
+            priority = 5000
+            for i in range(0, totalPages):
+                priority = priority - 1
+                url = response.url + '?sz=' + str(per_page_count) + '&start=' + str(start)
+                print(url)
+                request = scrapy.Request(url=url, callback=self.parsePaginated, priority=priority)
+                request.meta['PageNo'] = i
+                request.meta['PerPageCount'] = per_page_count
+                request.meta['category'] = response.meta['category']
+                request.meta['gender'] = response.meta['gender']
+                #page_no = page_no + 1
+                # for key in response.meta.keys():
+                #    request.meta[key] = response.meta[key]
+                yield request
+
+                start = start+per_page_count
+            print(totalProductCount)
+
+            #os.abort()
+
+
+        '''
+
         paginate_urls = []
 
         paginate_urlss = response.xpath(".//div[@class='pagination']/ul/li/a/@href").extract()
@@ -36,23 +70,24 @@ class SoliverDeSpider(scrapy.Spider):
                 if url not in paginate_urls:
                     paginate_urls.append(url)
             priority = 5000
-            for pu in paginate_urls:
+
+            for pu in paginate_urls[:3]:
+                #print(pu)
                 priority = priority - 1
                 request = scrapy.Request(url= pu, callback=self.parsePaginated, priority=priority)
+                
                 #request.meta['PageNo'] = page_no
                 #request.meta['PerPageCount'] = per_page_count
                 request.meta['category'] = response.meta['category']
                 request.meta['gender'] = response.meta['gender']
                 #page_no = page_no + 1
-                #print(pu)
+                #print(pu) 
                 yield request
         else:
-            print(response.url)
-            print("="*50)
-
-
-
-
+            pass
+            #print(response.url)
+        #print("="*50)
+        '''
 
 
         '''
@@ -82,12 +117,17 @@ class SoliverDeSpider(scrapy.Spider):
 
     def parsePaginated(self,response):
         blocks = response.xpath(conf.PRODUCT_BLOCK_XPATH)
+
+        print(len(blocks))
         priority = 5000
         input_rank = response.meta['PageNo'] * response.meta['PerPageCount']
 
-        for block in blocks[:50]:
+        for block in blocks:
             priority = priority - 1
             input_rank = input_rank + 1
+            print(block.xpath(conf.PRODUCT_URL_INSIDE_BLOCK_XPATH).extract()[0])
+
+            '''
             pdpUrl  = self.base_url+block.xpath(conf.PRODUCT_URL_INSIDE_BLOCK_XPATH).extract()[0]
             request = Request(pdpUrl, callback=self.parsePdpPage, priority=priority)
             request.meta['category'] = response.meta['category']
@@ -95,6 +135,10 @@ class SoliverDeSpider(scrapy.Spider):
             request.meta['rank'] = input_rank
             request.meta['paginatedUrl'] = response.url
             yield request
+            '''
+
+        '''
+        '''
 
     def parsePdpPage(self,response):
 

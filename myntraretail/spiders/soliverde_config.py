@@ -30,9 +30,9 @@ CATEGORIES_GENDER_XPATHS  = [
 
 PER_PAGE_COUNT = 72
 
-PRODUCT_BLOCK_XPATH = ".//main/ul[@class='prod-grid']/li"
+PRODUCT_BLOCK_XPATH = ".//div[contains(@class,'js-ovgrid-item')]"
 
-PRODUCT_URL_INSIDE_BLOCK_XPATH = ".//a[@class='prod-tile__link']/@href"
+PRODUCT_URL_INSIDE_BLOCK_XPATH = ".//div/@data-master"
 
 CATEGORY_XPATH = ".//div[@class='upper-breadcrumb']/div/a[last()]/text()"
 
