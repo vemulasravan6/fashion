@@ -49,4 +49,6 @@ class FashionDbItem(Item):
     rank        = Field()
     paginatedUrl = Field()
     category = Field()
+    stock = Field()
+    sku = Field()
     pass

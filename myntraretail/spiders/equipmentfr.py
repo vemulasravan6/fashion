@@ -4,7 +4,7 @@ import json
 from myntraretail.items import MyntraretailItem,FashionDbItem
 from scrapy.http.request import Request
 import time
-import datetime
+import datetime, os
 import equipmentfr_config as conf
 
 class EquipmentfrSpider(scrapy.Spider):
@@ -22,7 +22,7 @@ class EquipmentfrSpider(scrapy.Spider):
     def parse(self, response):
         per_page_count = len(response.xpath(conf.PER_PAGE_COUNT_XPATH))
         item_count = int(re.findall("(\d+)",response.xpath(conf.ITEM_COUNT_XPATH).extract()[0])[0])
-        page_count = item_count/per_page_count
+        page_count = 0#item_count/per_page_count
         page_no = 0
         priority = 5000
         for i in range(1,page_count+2):
@@ -41,7 +41,7 @@ class EquipmentfrSpider(scrapy.Spider):
         priority = 5000
         input_rank = response.meta['PageNo'] * response.meta['PerPageCount']
         print(response.url + ' #pageno : ' + str(response.meta['PageNo'])+ ' #rankstart : '+str(input_rank))
-        for block in blocks:
+        for block in blocks[:2]:
             priority = priority - 1
             input_rank = input_rank + 1
             pdpUrl  = block.xpath(conf.PRODUCT_URL_INSIDE_BLOCK_XPATH).extract()[0]
@@ -74,17 +74,49 @@ class EquipmentfrSpider(scrapy.Spider):
 
         fdi['url'] = response.url
 
-        fdi['currency'] = conf.CURRENCY_XPATH
+        #fdi['currency'] = conf.CURRENCY_XPATH
 
-        fdi['gender'] = conf.GENDER_XPATH
+        #fdi['gender'] = conf.GENDER_XPATH
 
         fdi['run_date'] = str(datetime.datetime.now()).split()[0]
 
         fdi['source'] = 'EquipmentFR'
 
-        fdi['brand'] = 'EquipmentFR'
+        #fdi['brand'] = 'EquipmentFR'
 
         fdi['category'] = response.meta['category']
+
+
+        try:
+            fdi['currency'] = response.xpath(conf.CURRENCY_XPATH).extract()[0]
+        except:
+            fdi['currency'] = ''
+            pass
+
+        try:
+            fdi['sku'] = response.xpath(conf.SKU_XPATH).extract()[0]
+        except:
+            fdi['sku'] = ''
+            pass
+
+        try:
+            fdi['gender'] = response.xpath(conf.GENDER_XPATH).extract()[0]
+        except:
+            fdi['gender'] = ''
+            pass
+
+
+        try:
+            fdi['brand'] = response.xpath(conf.BRAND_XPATH).extract()[0]
+        except:
+            fdi['brand'] = ''
+            pass
+
+        try:
+            fdi['stock'] = response.xpath(conf.STOCK_XPATH).extract()[0]
+        except:
+            fdi['stock'] = ''
+            pass
 
         try:
             fdi['styleName'] = response.xpath(conf.STYLENAME_XPATH).extract()[0]
@@ -93,7 +125,7 @@ class EquipmentfrSpider(scrapy.Spider):
             pass
 
         try:
-            fdi['articleType'] = response.xpath(conf.ARTICLETYPE_XPATH).extract()[0].split()[-1]
+            fdi['articleType'] = response.xpath(conf.ARTICLETYPE_XPATH).extract()[0]
         except:
             fdi['articleType'] = ''
             pass
@@ -123,7 +155,11 @@ class EquipmentfrSpider(scrapy.Spider):
             pass
 
         try:
-            fdi['sizes'] = response.xpath(conf.SIZES_XPATH).extract()
+            fdi['sizes'] = []
+            jsonResp = json.loads(re.findall("Product\.Config(.*?);", response.xpath(conf.SIZES_XPATH).extract()[0])[0].replace("(","").replace(")",""))
+            for option in jsonResp['attributes']['175']['options']:
+
+                fdi['sizes'].append(option['label'].replace("out of stock","").strip())
         except:
             fdi['sizes'] = ''
             pass
@@ -145,5 +181,7 @@ class EquipmentfrSpider(scrapy.Spider):
         except:
             fdi['styleId'] = ''
             pass
+
+        print(fdi)
 
         yield fdi

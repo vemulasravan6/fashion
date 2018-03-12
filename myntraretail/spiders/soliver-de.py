@@ -51,73 +51,12 @@ class SoliverDeSpider(scrapy.Spider):
                 #page_no = page_no + 1
                 # for key in response.meta.keys():
                 #    request.meta[key] = response.meta[key]
-                yield request
-
                 start = start+per_page_count
-            print(totalProductCount)
-
-            #os.abort()
-
-
-        '''
-
-        paginate_urls = []
-
-        paginate_urlss = response.xpath(".//div[@class='pagination']/ul/li/a/@href").extract()
-
-        if len(paginate_urlss)>0:
-            for url in response.xpath(".//div[@class='pagination']/ul/li/a/@href").extract():
-                if url not in paginate_urls:
-                    paginate_urls.append(url)
-            priority = 5000
-
-            for pu in paginate_urls[:3]:
-                #print(pu)
-                priority = priority - 1
-                request = scrapy.Request(url= pu, callback=self.parsePaginated, priority=priority)
-                
-                #request.meta['PageNo'] = page_no
-                #request.meta['PerPageCount'] = per_page_count
-                request.meta['category'] = response.meta['category']
-                request.meta['gender'] = response.meta['gender']
-                #page_no = page_no + 1
-                #print(pu) 
                 yield request
-        else:
-            pass
-            #print(response.url)
-        #print("="*50)
-        '''
-
-
-        '''
-        print(response.url)
-        page_count = int(re.findall("(\d+)", response.xpath(".//select/@data-totalpagecount").extract()[0])[0])
-        page_count = 3
-        per_page_count = 72
-        page_no = 0
-        priority = 5000
-        for i in range(1, page_count+1):
-            #print(i,page_count)
-            #start_from = i*per_page_count
-            priority = priority - 1
-            url = response.url+'?page='+str(i)
-            print(url)
-            request = scrapy.Request(url=url, callback=self.parsePaginated, priority=priority)
-            request.meta['PageNo'] = page_no
-            request.meta['PerPageCount'] = per_page_count
-            request.meta['category'] = response.meta['category']
-            request.meta['gender'] = response.meta['gender']
-            page_no = page_no + 1
-            # for key in response.meta.keys():
-            #    request.meta[key] = response.meta[key]
-            yield request
-        '''
 
 
     def parsePaginated(self,response):
         blocks = response.xpath(conf.PRODUCT_BLOCK_XPATH)
-
         print(len(blocks))
         priority = 5000
         input_rank = response.meta['PageNo'] * response.meta['PerPageCount']
