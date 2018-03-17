@@ -1,11 +1,11 @@
 
-2018-03-09 15:31:33 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 15:31:33 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 15:31:33 [scrapy.middleware] INFO: Enabled extensions:
+2018-03-16 18:14:45 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-16 18:14:45 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-16 18:14:45 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.logstats.LogStats',
  'scrapy.extensions.telnet.TelnetConsole',
  'scrapy.extensions.corestats.CoreStats']
-2018-03-09 15:31:33 [scrapy.middleware] INFO: Enabled downloader middlewares:
+2018-03-16 18:14:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
@@ -16,99 +16,63 @@
  'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-09 15:31:33 [scrapy.middleware] INFO: Enabled spider middlewares:
+2018-03-16 18:14:45 [scrapy.middleware] INFO: Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-09 15:31:33 [scrapy.middleware] INFO: Enabled item pipelines:
+2018-03-16 18:14:45 [scrapy.middleware] INFO: Enabled item pipelines:
 []
-2018-03-09 15:31:33 [scrapy.core.engine] INFO: Spider opened
-2018-03-09 15:31:33 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-09 15:31:33 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6029
-2018-03-09 15:31:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts> (referer: None)
-2018-03-09 15:31:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts?p=1> (referer: https://www.equipmentfr.com/shop/shirts)
-2018-03-09 15:31:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 15:31:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink>
-{'articleType': u'Shirts',
- 'brand': u'EquipmentFR',
- 'category': 'shirts',
- 'colour': u'CHARGED PINK',
- 'currency': u'USD',
- 'defaultImage': u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/633x/040ec09b1e35df139433887a97daa66f/1/8/18-1-q23-e900_chargedpink_31803_category.jpg',
- 'description': u'DETAILS\n                        A classic button-down with all the makings of a new wardrobe favorite, our essential is cut slightly slimmer than our signature shirt with an inverted pleat at the back for a flattering, tailored look.\n                    \n                     Model Is Wearing A Size Small Model Measurements: Height: 5\'11" Bust: 31" Waist: 24 100% Silk Dry Clean  Imported \n                    Style: #Q23-E900',
- 'gender': u'Womens',
- 'imageUrlList': [u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31803_category.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31781.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31787.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31774.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31795.jpg'],
- 'mrp': 228.0,
- 'paginatedUrl': 'https://www.equipmentfr.com/shop/shirts?p=1',
- 'rank': 1,
- 'run_date': '2018-03-09',
- 'selling_price': 228.0,
- 'sizes': '',
- 'sku': u'Q23-E900_CHARGED PINK',
- 'source': 'EquipmentFR',
- 'stock': u'In stock',
- 'styleId': 'Q23-E900',
- 'styleName': u'ESSENTIAL SILK SHIRT',
- 'url': 'https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink'}
-2018-03-09 15:31:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 15:31:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring>
-{'articleType': u'Shirts',
- 'brand': u'EquipmentFR',
- 'category': 'shirts',
- 'colour': u'BRIGHT WHITE',
- 'currency': u'USD',
- 'defaultImage': u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/633x/040ec09b1e35df139433887a97daa66f/q/0/q099-e570_brightwhite_25476.jpg',
- 'description': u'DETAILS\n                        This simple silk cami is subtle enough to go with everything you own but still delicate  enough to flatter in all the right ways. A poppy field print brings spring into the mix\u2014making it the perfect separate to brighten up any look. \n                    \n                     Model Is Wearing A Size Small Model Measurements: Height: 5\'11" Bust: 31" Waist: 24 100% Silk Dry Clean  Imported \n                    Style: #18-1-001663-E570',
- 'gender': u'Womens',
- 'imageUrlList': [u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_25476.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_25486.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_category.jpg'],
- 'mrp': 118.0,
- 'paginatedUrl': 'https://www.equipmentfr.com/shop/shirts?p=1',
- 'rank': 2,
- 'run_date': '2018-03-09',
- 'selling_price': 118.0,
- 'sizes': '',
- 'sku': u'18-1-001663-E570_BRIGHT WHITE',
- 'source': 'EquipmentFR',
- 'stock': u'In stock',
- 'styleId': '18-1-001663-E570',
- 'styleName': u'LAYLA SILK CAMI',
- 'url': 'https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring'}
-2018-03-09 15:31:42 [scrapy.core.engine] INFO: Closing spider (finished)
-2018-03-09 15:31:42 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 1806,
- 'downloader/request_count': 4,
- 'downloader/request_method_count/GET': 4,
- 'downloader/response_bytes': 76670,
- 'downloader/response_count': 4,
- 'downloader/response_status_count/200': 4,
+2018-03-16 18:14:45 [scrapy.core.engine] INFO: Spider opened
+2018-03-16 18:14:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-16 18:14:45 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-16 18:14:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.lefties.com/9/info/sitemaps/sitemap-index-products-lf.xml> (referer: None)
+2018-03-16 18:14:46 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.lefties.com/9/info/sitemaps/sitemap-index-products-lf.xml> (referer: None)
+Traceback (most recent call last):
+  File "/home/vemula/.local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/vemula/PycharmProjects/myntra/myntraretail/myntraretail/spiders/lefties.py", line 29, in parse
+    report = f.read().lower()
+  File "/usr/lib/python2.7/gzip.py", line 261, in read
+    self._read(readsize)
+  File "/usr/lib/python2.7/gzip.py", line 303, in _read
+    self._read_gzip_header()
+  File "/usr/lib/python2.7/gzip.py", line 197, in _read_gzip_header
+    raise IOError, 'Not a gzipped file'
+IOError: Not a gzipped file
+2018-03-16 18:14:46 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-16 18:14:46 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 348,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 553,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2018, 3, 9, 10, 1, 42, 809794),
- 'item_scraped_count': 2,
- 'log_count/DEBUG': 7,
+ 'finish_time': datetime.datetime(2018, 3, 16, 12, 44, 46, 641036),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
  'log_count/INFO': 7,
- 'request_depth_max': 2,
- 'response_received_count': 4,
- 'scheduler/dequeued': 4,
- 'scheduler/dequeued/memory': 4,
- 'scheduler/enqueued': 4,
- 'scheduler/enqueued/memory': 4,
- 'start_time': datetime.datetime(2018, 3, 9, 10, 1, 33, 573767)}
-2018-03-09 15:31:42 [scrapy.core.engine] INFO: Spider closed (finished)
-2018-03-09 15:32:45 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 15:32:45 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 15:32:45 [scrapy.middleware] INFO: Enabled extensions:
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/IOError': 1,
+ 'start_time': datetime.datetime(2018, 3, 16, 12, 44, 45, 933005)}
+2018-03-16 18:14:46 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-03-16 18:45:33 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-16 18:45:33 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'BOT_NAME': 'myntraretail', 'SPIDER_MODULES': ['myntraretail.spiders'], 'LOG_ENABLED': False, 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-16 18:45:49 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-16 18:45:49 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'BOT_NAME': 'myntraretail', 'SPIDER_MODULES': ['myntraretail.spiders'], 'LOG_ENABLED': False, 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-16 18:46:43 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-16 18:46:43 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-16 18:46:43 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.logstats.LogStats',
  'scrapy.extensions.telnet.TelnetConsole',
  'scrapy.extensions.corestats.CoreStats']
-2018-03-09 15:32:45 [scrapy.middleware] INFO: Enabled downloader middlewares:
+2018-03-16 18:46:43 [scrapy.middleware] INFO: Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
@@ -119,381 +83,44 @@
  'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-09 15:32:45 [scrapy.middleware] INFO: Enabled spider middlewares:
+2018-03-16 18:46:43 [scrapy.middleware] INFO: Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-09 15:32:45 [scrapy.middleware] INFO: Enabled item pipelines:
+2018-03-16 18:46:43 [scrapy.middleware] INFO: Enabled item pipelines:
 []
-2018-03-09 15:32:45 [scrapy.core.engine] INFO: Spider opened
-2018-03-09 15:32:45 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-09 15:32:45 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6029
-2018-03-09 15:32:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts> (referer: None)
-2018-03-09 15:32:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts?p=1> (referer: https://www.equipmentfr.com/shop/shirts)
-2018-03-09 15:32:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 15:34:30 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 15:34:30 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 15:34:30 [scrapy.middleware] INFO: Enabled extensions:
-['scrapy.extensions.logstats.LogStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.corestats.CoreStats']
-2018-03-09 15:34:30 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
- 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
- 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
- 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
- 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
- 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
- 'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-09 15:34:30 [scrapy.middleware] INFO: Enabled spider middlewares:
-['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
- 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
- 'scrapy.spidermiddlewares.referer.RefererMiddleware',
- 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
- 'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-09 15:34:30 [scrapy.middleware] INFO: Enabled item pipelines:
-[]
-2018-03-09 15:34:30 [scrapy.core.engine] INFO: Spider opened
-2018-03-09 15:34:30 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-09 15:34:30 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6029
-2018-03-09 15:34:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts> (referer: None)
-2018-03-09 15:34:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts?p=1> (referer: https://www.equipmentfr.com/shop/shirts)
-2018-03-09 15:34:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 15:35:10 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 15:35:10 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 15:35:10 [scrapy.middleware] INFO: Enabled extensions:
-['scrapy.extensions.logstats.LogStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.corestats.CoreStats']
-2018-03-09 15:35:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
- 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
- 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
- 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
- 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
- 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
- 'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-09 15:35:10 [scrapy.middleware] INFO: Enabled spider middlewares:
-['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
- 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
- 'scrapy.spidermiddlewares.referer.RefererMiddleware',
- 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
- 'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-09 15:35:10 [scrapy.middleware] INFO: Enabled item pipelines:
-[]
-2018-03-09 15:35:10 [scrapy.core.engine] INFO: Spider opened
-2018-03-09 15:35:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-09 15:35:10 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6029
-2018-03-09 15:35:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts> (referer: None)
-2018-03-09 15:35:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts?p=1> (referer: https://www.equipmentfr.com/shop/shirts)
-2018-03-09 15:35:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 15:36:44 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 15:36:44 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 15:36:44 [scrapy.middleware] INFO: Enabled extensions:
-['scrapy.extensions.logstats.LogStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.corestats.CoreStats']
-2018-03-09 15:36:44 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
- 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
- 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
- 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
- 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
- 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
- 'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-09 15:36:44 [scrapy.middleware] INFO: Enabled spider middlewares:
-['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
- 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
- 'scrapy.spidermiddlewares.referer.RefererMiddleware',
- 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
- 'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-09 15:36:44 [scrapy.middleware] INFO: Enabled item pipelines:
-[]
-2018-03-09 15:36:44 [scrapy.core.engine] INFO: Spider opened
-2018-03-09 15:36:44 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-09 15:36:44 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6029
-2018-03-09 15:36:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts> (referer: None)
-2018-03-09 15:36:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts?p=1> (referer: https://www.equipmentfr.com/shop/shirts)
-2018-03-09 15:36:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 15:37:34 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 15:37:34 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 15:37:34 [scrapy.middleware] INFO: Enabled extensions:
-['scrapy.extensions.logstats.LogStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.corestats.CoreStats']
-2018-03-09 15:37:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
- 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
- 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
- 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
- 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
- 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
- 'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-09 15:37:34 [scrapy.middleware] INFO: Enabled spider middlewares:
-['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
- 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
- 'scrapy.spidermiddlewares.referer.RefererMiddleware',
- 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
- 'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-09 15:37:34 [scrapy.middleware] INFO: Enabled item pipelines:
-[]
-2018-03-09 15:37:34 [scrapy.core.engine] INFO: Spider opened
-2018-03-09 15:37:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-09 15:37:34 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6029
-2018-03-09 15:37:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts> (referer: None)
-2018-03-09 15:37:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts?p=1> (referer: https://www.equipmentfr.com/shop/shirts)
-2018-03-09 15:37:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 15:38:25 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 15:38:25 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 15:38:25 [scrapy.middleware] INFO: Enabled extensions:
-['scrapy.extensions.logstats.LogStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.corestats.CoreStats']
-2018-03-09 15:38:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
- 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
- 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
- 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
- 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
- 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
- 'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-09 15:38:25 [scrapy.middleware] INFO: Enabled spider middlewares:
-['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
- 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
- 'scrapy.spidermiddlewares.referer.RefererMiddleware',
- 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
- 'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-09 15:38:25 [scrapy.middleware] INFO: Enabled item pipelines:
-[]
-2018-03-09 15:38:25 [scrapy.core.engine] INFO: Spider opened
-2018-03-09 15:38:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-09 15:38:25 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6029
-2018-03-09 15:38:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts> (referer: None)
-2018-03-09 15:38:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts?p=1> (referer: https://www.equipmentfr.com/shop/shirts)
-2018-03-09 15:38:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 15:41:07 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 15:41:07 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 15:41:07 [scrapy.middleware] INFO: Enabled extensions:
-['scrapy.extensions.logstats.LogStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.corestats.CoreStats']
-2018-03-09 15:41:07 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
- 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
- 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
- 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
- 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
- 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
- 'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-09 15:41:07 [scrapy.middleware] INFO: Enabled spider middlewares:
-['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
- 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
- 'scrapy.spidermiddlewares.referer.RefererMiddleware',
- 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
- 'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-09 15:41:07 [scrapy.middleware] INFO: Enabled item pipelines:
-[]
-2018-03-09 15:41:07 [scrapy.core.engine] INFO: Spider opened
-2018-03-09 15:41:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-09 15:41:07 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6029
-2018-03-09 15:41:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts> (referer: None)
-2018-03-09 15:41:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts?p=1> (referer: https://www.equipmentfr.com/shop/shirts)
-2018-03-09 15:41:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 15:42:47 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 15:42:47 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 15:42:47 [scrapy.middleware] INFO: Enabled extensions:
-['scrapy.extensions.logstats.LogStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.corestats.CoreStats']
-2018-03-09 15:42:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
- 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
- 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
- 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
- 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
- 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
- 'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-09 15:42:47 [scrapy.middleware] INFO: Enabled spider middlewares:
-['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
- 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
- 'scrapy.spidermiddlewares.referer.RefererMiddleware',
- 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
- 'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-09 15:42:47 [scrapy.middleware] INFO: Enabled item pipelines:
-[]
-2018-03-09 15:42:47 [scrapy.core.engine] INFO: Spider opened
-2018-03-09 15:42:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-09 15:42:47 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6029
-2018-03-09 15:43:07 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.equipmentfr.com/shop/shirts> (failed 1 times): DNS lookup failed: no results for hostname lookup: www.equipmentfr.com.
-2018-03-09 15:43:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts> (referer: None)
-2018-03-09 15:43:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts?p=1> (referer: https://www.equipmentfr.com/shop/shirts)
-2018-03-09 15:43:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 15:43:54 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 15:43:54 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 15:43:54 [scrapy.middleware] INFO: Enabled extensions:
-['scrapy.extensions.logstats.LogStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.corestats.CoreStats']
-2018-03-09 15:43:54 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
- 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
- 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
- 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
- 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
- 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
- 'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-09 15:43:54 [scrapy.middleware] INFO: Enabled spider middlewares:
-['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
- 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
- 'scrapy.spidermiddlewares.referer.RefererMiddleware',
- 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
- 'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-09 15:43:54 [scrapy.middleware] INFO: Enabled item pipelines:
-[]
-2018-03-09 15:43:54 [scrapy.core.engine] INFO: Spider opened
-2018-03-09 15:43:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-09 15:43:54 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6029
-2018-03-09 15:43:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts> (referer: None)
-2018-03-09 15:43:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts?p=1> (referer: https://www.equipmentfr.com/shop/shirts)
-2018-03-09 15:43:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 15:44:51 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 15:44:51 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 15:44:51 [scrapy.middleware] INFO: Enabled extensions:
-['scrapy.extensions.logstats.LogStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.corestats.CoreStats']
-2018-03-09 15:44:51 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
- 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
- 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
- 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
- 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
- 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
- 'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-09 15:44:51 [scrapy.middleware] INFO: Enabled spider middlewares:
-['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
- 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
- 'scrapy.spidermiddlewares.referer.RefererMiddleware',
- 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
- 'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-09 15:44:51 [scrapy.middleware] INFO: Enabled item pipelines:
-[]
-2018-03-09 15:44:51 [scrapy.core.engine] INFO: Spider opened
-2018-03-09 15:44:51 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-09 15:44:51 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6029
-2018-03-09 15:44:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts> (referer: None)
-2018-03-09 15:44:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts?p=1> (referer: https://www.equipmentfr.com/shop/shirts)
-2018-03-09 15:44:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 15:44:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink>
-{'articleType': u'Shirts',
- 'brand': u'EquipmentFR',
- 'category': 'shirts',
- 'colour': u'CHARGED PINK',
- 'currency': u'USD',
- 'defaultImage': u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/633x/040ec09b1e35df139433887a97daa66f/1/8/18-1-q23-e900_chargedpink_31803_category.jpg',
- 'description': u'DETAILS\n                        A classic button-down with all the makings of a new wardrobe favorite, our essential is cut slightly slimmer than our signature shirt with an inverted pleat at the back for a flattering, tailored look.\n                    \n                     Model Is Wearing A Size Small Model Measurements: Height: 5\'11" Bust: 31" Waist: 24 100% Silk Dry Clean  Imported \n                    Style: #Q23-E900',
- 'gender': u'Womens',
- 'imageUrlList': [u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31803_category.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31781.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31787.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31774.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31795.jpg'],
- 'mrp': 228.0,
- 'paginatedUrl': 'https://www.equipmentfr.com/shop/shirts?p=1',
- 'rank': 1,
- 'run_date': '2018-03-09',
- 'selling_price': 228.0,
- 'sizes': [u'XS', u'S', u'M', u'L', u'XL out of stock '],
- 'sku': u'Q23-E900_CHARGED PINK',
- 'source': 'EquipmentFR',
- 'stock': u'In stock',
- 'styleId': 'Q23-E900',
- 'styleName': u'ESSENTIAL SILK SHIRT',
- 'url': 'https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink'}
-2018-03-09 15:44:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 15:44:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring>
-{'articleType': u'Shirts',
- 'brand': u'EquipmentFR',
- 'category': 'shirts',
- 'colour': u'BRIGHT WHITE',
- 'currency': u'USD',
- 'defaultImage': u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/633x/040ec09b1e35df139433887a97daa66f/q/0/q099-e570_brightwhite_25476.jpg',
- 'description': u'DETAILS\n                        This simple silk cami is subtle enough to go with everything you own but still delicate  enough to flatter in all the right ways. A poppy field print brings spring into the mix\u2014making it the perfect separate to brighten up any look. \n                    \n                     Model Is Wearing A Size Small Model Measurements: Height: 5\'11" Bust: 31" Waist: 24 100% Silk Dry Clean  Imported \n                    Style: #18-1-001663-E570',
- 'gender': u'Womens',
- 'imageUrlList': [u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_25476.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_25486.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_category.jpg'],
- 'mrp': 118.0,
- 'paginatedUrl': 'https://www.equipmentfr.com/shop/shirts?p=1',
- 'rank': 2,
- 'run_date': '2018-03-09',
- 'selling_price': 118.0,
- 'sizes': [u'XS', u'S', u'M', u'L'],
- 'sku': u'18-1-001663-E570_BRIGHT WHITE',
- 'source': 'EquipmentFR',
- 'stock': u'In stock',
- 'styleId': '18-1-001663-E570',
- 'styleName': u'LAYLA SILK CAMI',
- 'url': 'https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring'}
-2018-03-09 15:44:55 [scrapy.core.engine] INFO: Closing spider (finished)
-2018-03-09 15:44:55 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 1806,
- 'downloader/request_count': 4,
- 'downloader/request_method_count/GET': 4,
- 'downloader/response_bytes': 77624,
- 'downloader/response_count': 4,
- 'downloader/response_status_count/200': 4,
+2018-03-16 18:46:43 [scrapy.core.engine] INFO: Spider opened
+2018-03-16 18:46:43 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-16 18:46:43 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-16 18:46:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.lefties.com/9/info/sitemaps/sitemap-index-products-lf.xml> (referer: None)
+2018-03-16 18:46:46 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-16 18:46:46 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 348,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 553,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2018, 3, 9, 10, 14, 55, 2427),
- 'item_scraped_count': 2,
- 'log_count/DEBUG': 7,
+ 'finish_time': datetime.datetime(2018, 3, 16, 13, 16, 46, 159101),
+ 'log_count/DEBUG': 2,
  'log_count/INFO': 7,
- 'request_depth_max': 2,
- 'response_received_count': 4,
- 'scheduler/dequeued': 4,
- 'scheduler/dequeued/memory': 4,
- 'scheduler/enqueued': 4,
- 'scheduler/enqueued/memory': 4,
- 'start_time': datetime.datetime(2018, 3, 9, 10, 14, 51, 340477)}
-2018-03-09 15:44:55 [scrapy.core.engine] INFO: Spider closed (finished)
-2018-03-09 16:47:15 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 16:47:15 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'BOT_NAME': 'myntraretail', 'SPIDER_MODULES': ['myntraretail.spiders'], 'LOG_ENABLED': False, 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 16:47:26 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 16:47:26 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 16:47:26 [scrapy.middleware] INFO: Enabled extensions:
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 3, 16, 13, 16, 43, 471760)}
+2018-03-16 18:46:46 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-03-16 18:56:56 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-16 18:56:56 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-16 18:56:56 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.logstats.LogStats',
  'scrapy.extensions.telnet.TelnetConsole',
  'scrapy.extensions.corestats.CoreStats']
-2018-03-09 16:47:26 [scrapy.middleware] INFO: Enabled downloader middlewares:
+2018-03-16 18:56:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
@@ -504,99 +131,59 @@
  'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-09 16:47:26 [scrapy.middleware] INFO: Enabled spider middlewares:
+2018-03-16 18:56:56 [scrapy.middleware] INFO: Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-09 16:47:26 [scrapy.middleware] INFO: Enabled item pipelines:
+2018-03-16 18:56:56 [scrapy.middleware] INFO: Enabled item pipelines:
 []
-2018-03-09 16:47:26 [scrapy.core.engine] INFO: Spider opened
-2018-03-09 16:47:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-09 16:47:26 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6029
-2018-03-09 16:47:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts> (referer: None)
-2018-03-09 16:47:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts?p=1> (referer: https://www.equipmentfr.com/shop/shirts)
-2018-03-09 16:47:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 16:47:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink>
-{'articleType': u'Shirts',
- 'brand': u'EquipmentFR',
- 'category': 'shirts',
- 'colour': u'CHARGED PINK',
- 'currency': u'USD',
- 'defaultImage': u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/633x/040ec09b1e35df139433887a97daa66f/1/8/18-1-q23-e900_chargedpink_31803_category.jpg',
- 'description': u'DETAILS\n                        A classic button-down with all the makings of a new wardrobe favorite, our essential is cut slightly slimmer than our signature shirt with an inverted pleat at the back for a flattering, tailored look.\n                    \n                     Model Is Wearing A Size Small Model Measurements: Height: 5\'11" Bust: 31" Waist: 24 100% Silk Dry Clean  Imported \n                    Style: #Q23-E900',
- 'gender': u'Womens',
- 'imageUrlList': [u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31803_category.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31781.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31787.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31774.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31795.jpg'],
- 'mrp': 228.0,
- 'paginatedUrl': 'https://www.equipmentfr.com/shop/shirts?p=1',
- 'rank': 1,
- 'run_date': '2018-03-09',
- 'selling_price': 228.0,
- 'sizes': [u'XS', u'S', u'M', u'L', u'XL out of stock '],
- 'sku': u'Q23-E900_CHARGED PINK',
- 'source': 'EquipmentFR',
- 'stock': u'In stock',
- 'styleId': 'Q23-E900',
- 'styleName': u'ESSENTIAL SILK SHIRT',
- 'url': 'https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink'}
-2018-03-09 16:47:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 16:47:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring>
-{'articleType': u'Shirts',
- 'brand': u'EquipmentFR',
- 'category': 'shirts',
- 'colour': u'BRIGHT WHITE',
- 'currency': u'USD',
- 'defaultImage': u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/633x/040ec09b1e35df139433887a97daa66f/q/0/q099-e570_brightwhite_25476.jpg',
- 'description': u'DETAILS\n                        This simple silk cami is subtle enough to go with everything you own but still delicate  enough to flatter in all the right ways. A poppy field print brings spring into the mix\u2014making it the perfect separate to brighten up any look. \n                    \n                     Model Is Wearing A Size Small Model Measurements: Height: 5\'11" Bust: 31" Waist: 24 100% Silk Dry Clean  Imported \n                    Style: #18-1-001663-E570',
- 'gender': u'Womens',
- 'imageUrlList': [u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_25476.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_25486.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_category.jpg'],
- 'mrp': 118.0,
- 'paginatedUrl': 'https://www.equipmentfr.com/shop/shirts?p=1',
- 'rank': 2,
- 'run_date': '2018-03-09',
- 'selling_price': 118.0,
- 'sizes': [u'XS', u'S', u'M', u'L'],
- 'sku': u'18-1-001663-E570_BRIGHT WHITE',
- 'source': 'EquipmentFR',
- 'stock': u'In stock',
- 'styleId': '18-1-001663-E570',
- 'styleName': u'LAYLA SILK CAMI',
- 'url': 'https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring'}
-2018-03-09 16:47:30 [scrapy.core.engine] INFO: Closing spider (finished)
-2018-03-09 16:47:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 1806,
- 'downloader/request_count': 4,
- 'downloader/request_method_count/GET': 4,
- 'downloader/response_bytes': 77144,
- 'downloader/response_count': 4,
- 'downloader/response_status_count/200': 4,
+2018-03-16 18:56:56 [scrapy.core.engine] INFO: Spider opened
+2018-03-16 18:56:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-16 18:56:56 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-16 18:56:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.lefties.com/9/info/sitemaps/sitemap-index-products-lf.xml> (referer: None)
+2018-03-16 18:56:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.lefties.com/9/info/sitemaps/sitemap-index-products-lf.xml> (referer: None)
+Traceback (most recent call last):
+  File "/home/vemula/.local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/vemula/PycharmProjects/myntra/myntraretail/myntraretail/spiders/lefties.py", line 49, in parse
+    for productUrl in (Selector(text=sitemapData).xpath('//loc/text()').extract()):
+  File "/home/vemula/.local/lib/python2.7/site-packages/scrapy/selector/unified.py", line 64, in __init__
+    response = _response_from_text(text, st)
+  File "/home/vemula/.local/lib/python2.7/site-packages/scrapy/selector/unified.py", line 26, in _response_from_text
+    body=to_bytes(text, 'utf-8'))
+  File "/home/vemula/.local/lib/python2.7/site-packages/scrapy/utils/python.py", line 117, in to_bytes
+    'object, got %s' % type(text).__name__)
+TypeError: to_bytes must receive a unicode, str or bytes object, got tuple
+2018-03-16 18:56:56 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-16 18:56:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 348,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 553,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2018, 3, 9, 11, 17, 30, 720221),
- 'item_scraped_count': 2,
- 'log_count/DEBUG': 7,
+ 'finish_time': datetime.datetime(2018, 3, 16, 13, 26, 56, 865228),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
  'log_count/INFO': 7,
- 'request_depth_max': 2,
- 'response_received_count': 4,
- 'scheduler/dequeued': 4,
- 'scheduler/dequeued/memory': 4,
- 'scheduler/enqueued': 4,
- 'scheduler/enqueued/memory': 4,
- 'start_time': datetime.datetime(2018, 3, 9, 11, 17, 26, 303320)}
-2018-03-09 16:47:30 [scrapy.core.engine] INFO: Spider closed (finished)
-2018-03-09 16:48:13 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 16:48:13 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 16:48:13 [scrapy.middleware] INFO: Enabled extensions:
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2018, 3, 16, 13, 26, 56, 388808)}
+2018-03-16 18:56:56 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-03-17 08:31:18 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-17 08:31:18 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-17 08:31:18 [scrapy.middleware] INFO: Enabled extensions:
 ['scrapy.extensions.logstats.LogStats',
  'scrapy.extensions.telnet.TelnetConsole',
  'scrapy.extensions.corestats.CoreStats']
-2018-03-09 16:48:13 [scrapy.middleware] INFO: Enabled downloader middlewares:
+2018-03-17 08:31:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
 ['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
@@ -607,171 +194,49 @@
  'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
  'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-09 16:48:13 [scrapy.middleware] INFO: Enabled spider middlewares:
+2018-03-17 08:31:18 [scrapy.middleware] INFO: Enabled spider middlewares:
 ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
  'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
  'scrapy.spidermiddlewares.referer.RefererMiddleware',
  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
  'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-09 16:48:13 [scrapy.middleware] INFO: Enabled item pipelines:
+2018-03-17 08:31:18 [scrapy.middleware] INFO: Enabled item pipelines:
 []
-2018-03-09 16:48:13 [scrapy.core.engine] INFO: Spider opened
-2018-03-09 16:48:13 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-09 16:48:13 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6029
-2018-03-09 16:48:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts> (referer: None)
-2018-03-09 16:48:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts?p=1> (referer: https://www.equipmentfr.com/shop/shirts)
-2018-03-09 16:48:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 16:48:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink>
-{'articleType': u'Shirts',
- 'brand': u'EquipmentFR',
- 'category': 'shirts',
- 'colour': u'CHARGED PINK',
- 'currency': u'USD',
- 'defaultImage': u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/633x/040ec09b1e35df139433887a97daa66f/1/8/18-1-q23-e900_chargedpink_31803_category.jpg',
- 'description': u'DETAILS\n                        A classic button-down with all the makings of a new wardrobe favorite, our essential is cut slightly slimmer than our signature shirt with an inverted pleat at the back for a flattering, tailored look.\n                    \n                     Model Is Wearing A Size Small Model Measurements: Height: 5\'11" Bust: 31" Waist: 24 100% Silk Dry Clean  Imported \n                    Style: #Q23-E900',
- 'gender': u'Womens',
- 'imageUrlList': [u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31803_category.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31781.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31787.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31774.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31795.jpg'],
- 'mrp': 228.0,
- 'paginatedUrl': 'https://www.equipmentfr.com/shop/shirts?p=1',
- 'rank': 1,
- 'run_date': '2018-03-09',
- 'selling_price': 228.0,
- 'sizes': [u'XS', u'S', u'M', u'L', u'XL'],
- 'sku': u'Q23-E900_CHARGED PINK',
- 'source': 'EquipmentFR',
- 'stock': u'In stock',
- 'styleId': 'Q23-E900',
- 'styleName': u'ESSENTIAL SILK SHIRT',
- 'url': 'https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink'}
-2018-03-09 16:48:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 16:48:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring>
-{'articleType': u'Shirts',
- 'brand': u'EquipmentFR',
- 'category': 'shirts',
- 'colour': u'BRIGHT WHITE',
- 'currency': u'USD',
- 'defaultImage': u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/633x/040ec09b1e35df139433887a97daa66f/q/0/q099-e570_brightwhite_25476.jpg',
- 'description': u'DETAILS\n                        This simple silk cami is subtle enough to go with everything you own but still delicate  enough to flatter in all the right ways. A poppy field print brings spring into the mix\u2014making it the perfect separate to brighten up any look. \n                    \n                     Model Is Wearing A Size Small Model Measurements: Height: 5\'11" Bust: 31" Waist: 24 100% Silk Dry Clean  Imported \n                    Style: #18-1-001663-E570',
- 'gender': u'Womens',
- 'imageUrlList': [u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_25476.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_25486.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_category.jpg'],
- 'mrp': 118.0,
- 'paginatedUrl': 'https://www.equipmentfr.com/shop/shirts?p=1',
- 'rank': 2,
- 'run_date': '2018-03-09',
- 'selling_price': 118.0,
- 'sizes': [u'XS', u'S', u'M', u'L'],
- 'sku': u'18-1-001663-E570_BRIGHT WHITE',
- 'source': 'EquipmentFR',
- 'stock': u'In stock',
- 'styleId': '18-1-001663-E570',
- 'styleName': u'LAYLA SILK CAMI',
- 'url': 'https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring'}
-2018-03-09 16:48:18 [scrapy.core.engine] INFO: Closing spider (finished)
-2018-03-09 16:48:18 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 1806,
- 'downloader/request_count': 4,
- 'downloader/request_method_count/GET': 4,
- 'downloader/response_bytes': 76669,
- 'downloader/response_count': 4,
- 'downloader/response_status_count/200': 4,
+2018-03-17 08:31:18 [scrapy.core.engine] INFO: Spider opened
+2018-03-17 08:31:18 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-17 08:31:18 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-17 08:31:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.lefties.com/9/info/sitemaps/sitemap-index-products-lf.xml> (referer: None)
+2018-03-17 08:31:20 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.lefties.com/9/info/sitemaps/sitemap-index-products-lf.xml> (referer: None)
+Traceback (most recent call last):
+  File "/home/vemula/.local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/vemula/PycharmProjects/myntra/myntraretail/myntraretail/spiders/lefties.py", line 49, in parse
+    for productUrl in (Selector(text=sitemapData).xpath('//loc/text()').extract()):
+  File "/home/vemula/.local/lib/python2.7/site-packages/scrapy/selector/unified.py", line 64, in __init__
+    response = _response_from_text(text, st)
+  File "/home/vemula/.local/lib/python2.7/site-packages/scrapy/selector/unified.py", line 26, in _response_from_text
+    body=to_bytes(text, 'utf-8'))
+  File "/home/vemula/.local/lib/python2.7/site-packages/scrapy/utils/python.py", line 117, in to_bytes
+    'object, got %s' % type(text).__name__)
+TypeError: to_bytes must receive a unicode, str or bytes object, got tuple
+2018-03-17 08:31:20 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-17 08:31:20 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 348,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 553,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
  'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2018, 3, 9, 11, 18, 18, 219894),
- 'item_scraped_count': 2,
- 'log_count/DEBUG': 7,
+ 'finish_time': datetime.datetime(2018, 3, 17, 3, 1, 20, 981265),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
  'log_count/INFO': 7,
- 'request_depth_max': 2,
- 'response_received_count': 4,
- 'scheduler/dequeued': 4,
- 'scheduler/dequeued/memory': 4,
- 'scheduler/enqueued': 4,
- 'scheduler/enqueued/memory': 4,
- 'start_time': datetime.datetime(2018, 3, 9, 11, 18, 13, 429522)}
-2018-03-09 16:48:18 [scrapy.core.engine] INFO: Spider closed (finished)
-2018-03-09 16:58:58 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-09 16:58:58 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-09 16:58:58 [scrapy.middleware] INFO: Enabled extensions:
-['scrapy.extensions.logstats.LogStats',
- 'scrapy.extensions.telnet.TelnetConsole',
- 'scrapy.extensions.corestats.CoreStats']
-2018-03-09 16:58:58 [scrapy.middleware] INFO: Enabled downloader middlewares:
-['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
- 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
- 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
- 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
- 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
- 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
- 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
- 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
- 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
- 'scrapy.downloadermiddlewares.stats.DownloaderStats']
-2018-03-09 16:58:58 [scrapy.middleware] INFO: Enabled spider middlewares:
-['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
- 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
- 'scrapy.spidermiddlewares.referer.RefererMiddleware',
- 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
- 'scrapy.spidermiddlewares.depth.DepthMiddleware']
-2018-03-09 16:58:58 [scrapy.middleware] INFO: Enabled item pipelines:
-[]
-2018-03-09 16:58:58 [scrapy.core.engine] INFO: Spider opened
-2018-03-09 16:58:58 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
-2018-03-09 16:58:58 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6029
-2018-03-09 16:58:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts> (referer: None)
-2018-03-09 16:59:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts?p=1> (referer: https://www.equipmentfr.com/shop/shirts)
-2018-03-09 16:59:00 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
-2018-03-09 16:59:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring> (referer: https://www.equipmentfr.com/shop/shirts?p=1)
-2018-03-09 16:59:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring>
-{'articleType': u'Shirts',
- 'brand': u'EquipmentFR',
- 'category': 'shirts',
- 'colour': u'BRIGHT WHITE',
- 'currency': u'USD',
- 'defaultImage': u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/633x/040ec09b1e35df139433887a97daa66f/q/0/q099-e570_brightwhite_25476.jpg',
- 'description': u'DETAILS\n                        This simple silk cami is subtle enough to go with everything you own but still delicate  enough to flatter in all the right ways. A poppy field print brings spring into the mix\u2014making it the perfect separate to brighten up any look. \n                    \n                     Model Is Wearing A Size Small Model Measurements: Height: 5\'11" Bust: 31" Waist: 24 100% Silk Dry Clean  Imported \n                    Style: #18-1-001663-E570',
- 'gender': u'Womens',
- 'imageUrlList': [u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_25476.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_25486.jpg',
-                  u'https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_category.jpg'],
- 'mrp': 118.0,
- 'paginatedUrl': 'https://www.equipmentfr.com/shop/shirts?p=1',
- 'rank': 1,
- 'run_date': '2018-03-09',
- 'selling_price': 118.0,
- 'sizes': [u'XS', u'S', u'M', u'L'],
- 'sku': u'18-1-001663-E570_BRIGHT WHITE',
- 'source': 'EquipmentFR',
- 'stock': u'In stock',
- 'styleId': '18-1-001663-E570',
- 'styleName': u'LAYLA SILK CAMI',
- 'url': 'https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring'}
-2018-03-09 16:59:01 [scrapy.core.engine] INFO: Closing spider (finished)
-2018-03-09 16:59:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
-{'downloader/request_bytes': 1295,
- 'downloader/request_count': 3,
- 'downloader/request_method_count/GET': 3,
- 'downloader/response_bytes': 54275,
- 'downloader/response_count': 3,
- 'downloader/response_status_count/200': 3,
- 'dupefilter/filtered': 1,
- 'finish_reason': 'finished',
- 'finish_time': datetime.datetime(2018, 3, 9, 11, 29, 1, 504811),
- 'item_scraped_count': 1,
- 'log_count/DEBUG': 6,
- 'log_count/INFO': 7,
- 'request_depth_max': 2,
- 'response_received_count': 3,
- 'scheduler/dequeued': 3,
- 'scheduler/dequeued/memory': 3,
- 'scheduler/enqueued': 3,
- 'scheduler/enqueued/memory': 3,
- 'start_time': datetime.datetime(2018, 3, 9, 11, 28, 58, 782244)}
-2018-03-09 16:59:01 [scrapy.core.engine] INFO: Spider closed (finished)
-2018-03-12 15:12:08 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
-2018-03-12 15:12:08 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'BOT_NAME': 'myntraretail', 'SPIDER_MODULES': ['myntraretail.spiders'], 'LOG_ENABLED': False, 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
-2018-03-12 16:06:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barneys.com/> (referer: None)
-2018-03-12 16:21:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.barneys.com/category/women/bags/mini-bags/N-1iaqy9d> (referer: None)
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/TypeError': 1,
+ 'start_time': datetime.datetime(2018, 3, 17, 3, 1, 18, 756678)}
+2018-03-17 08:31:20 [scrapy.core.engine] INFO: Spider closed (finished)

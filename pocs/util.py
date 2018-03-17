@@ -27,8 +27,14 @@ class Util():
         self.driver.close()
 
 
+
+
+'''
+
 u = Util()
 
 print(u.getScrapyResponse("https://www.otto.de/p/patrizia-dini-by-heine-glencheckblazer-mit-wolle-567919549/#variationId=567919643"))
 
 u.closeDriver()
+
+'''

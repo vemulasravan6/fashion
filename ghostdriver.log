@@ -1,10 +1,5 @@
-_IceTransSocketUNIXConnect: Cannot connect to non-local host vemula-Latitude-5480
-_IceTransSocketUNIXConnect: Cannot connect to non-local host vemula-Latitude-5480
-Qt: Session management error: Could not open network socket
-[INFO  - 2018-03-01T13:26:02.305Z] GhostDriver - Main - running on port 47843
-[INFO  - 2018-03-01T13:26:03.123Z] Session [16c41e10-1d54-11e8-a2e8-5dca882efc3a] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Version/7.0 Safari/538.1"}
-[INFO  - 2018-03-01T13:26:03.123Z] Session [16c41e10-1d54-11e8-a2e8-5dca882efc3a] - page.customHeaders:  - {}
-[INFO  - 2018-03-01T13:26:03.123Z] Session [16c41e10-1d54-11e8-a2e8-5dca882efc3a] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2018-03-01T13:26:03.124Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 16c41e10-1d54-11e8-a2e8-5dca882efc3a
-PhantomJS has crashed. Please read the bug reporting guide at
-<http://phantomjs.org/bug-reporting.html> and file a bug report.
+[INFO  - 2018-03-14T10:44:44.526Z] GhostDriver - Main - running on port 58747
+[INFO  - 2018-03-14T10:44:45.349Z] Session [b5bbbf30-2774-11e8-b281-bd6bad5eaf35] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Version/7.0 Safari/538.1"}
+[INFO  - 2018-03-14T10:44:45.349Z] Session [b5bbbf30-2774-11e8-b281-bd6bad5eaf35] - page.customHeaders:  - {}
+[INFO  - 2018-03-14T10:44:45.349Z] Session [b5bbbf30-2774-11e8-b281-bd6bad5eaf35] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"linux-unknown-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2018-03-14T10:44:45.349Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: b5bbbf30-2774-11e8-b281-bd6bad5eaf35

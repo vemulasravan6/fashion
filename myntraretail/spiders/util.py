@@ -4,9 +4,12 @@ import inspect,sys,time
 
 def getScrapyResponse(url):
     try:
+        print(url)
         driver = webdriver.PhantomJS()
+        print(driver)
         driver.get(url)
         response_html = driver.page_source
+        print(response_html)
         response_html = HtmlResponse(url=url, body=response_html, encoding='utf-8')
         driver.close()
         return response_html
@@ -18,6 +21,7 @@ def getScrapyResponse(url):
         pass
     return ''
 
+#print(getScrapyResponse('https://www.lefties.com/sa/women/jeans/super-skinny-ripped-jeans-c1029515p500757003.html'))
 
 '''
 class util:

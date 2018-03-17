@@ -6,16 +6,54 @@ from scrapy.http.request import Request
 import time
 import datetime
 import util as util_obj
-import barneys_config as conf
+import lefties_config as conf
 import requests
+from scrapy.selector import Selector
+import gzip
+import StringIO
+import requests
+import wget
+import wget
+import gzip
+import subprocess
+import os
 
-class BarneysSpider(scrapy.Spider):
+
+class LeftiesSpider(scrapy.Spider):
     name = conf.SOURCE
-    start_urls = [conf.URL]
-    base_url = conf.BASE_URL
+    start_urls  = ['https://www.lefties.com/9/info/sitemaps/sitemap-index-products-lf.xml'] # [conf.URL]
+    base_url    = conf.BASE_URL
     handle_httpstatus_list = [200,404,500]
 
+    def readDataFromUrl(self, url):
+        path = url.split('/')[-1]
+        data_download_status = False
+        file_content = ''
+        shell_cmd = "wget -O " + path + " -q " + url
+        try:
+            data = subprocess.Popen(shell_cmd, shell=True, stdout=subprocess.PIPE).stdout.read()
+            data_download_status = True
+            f = gzip.open(path, 'rb')
+            file_content = f.read().lower()
+            f.close()
+            os.remove(path)
+        except:
+            data = None
+            print("HTML_DOWNLOAD_EXCEPTION")
+            pass
+        return file_content, data_download_status
+
     def parse(self, response):
+        for url in  (Selector(text=response.body).xpath('//loc/text()').extract()):
+            sitemapData = self.readDataFromUrl(url)
+            for productUrl in (Selector(text=sitemapData).xpath('//loc/text()').extract()):
+                print(productUrl)
+            print("="*100)
+
+
+        #print (gzip.GzipFile(fileobj=StringIO.StringIO(urllib2.urlopen(DOWNLOAD_LINK).read()), mode='rb').read())
+
+        '''
         priority = 50000
         for category in  conf.CATEGORIES_GENDER_XPATHS:
             page_size = conf.PAGE_SIZE
@@ -24,6 +62,7 @@ class BarneysSpider(scrapy.Spider):
                 request = scrapy.Request(url=url+'?recordsPerPage=48&page=1', callback=self.parseCategoryPage, priority=priority)
                 request.meta['gender'] = category['GENDER']
                 yield request
+        '''
 
     def parseCategoryPage(self,response):
         per_page_count = 48
