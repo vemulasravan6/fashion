@@ -10,9 +10,7 @@ PAGINATED_LIST = 'PAGINATED_LIST'
 
 SOURCE      = 'lefties'
 
-URL         = 'https://www.barneys.com/sitemap?_ga=2.70540944.147060301.1520925905-2073211617.1520925905'
-
-BASE_URL    = 'https://www.barneys.com'
+START_URL = 'https://www.lefties.com/9/info/sitemaps/sitemap-index-products-lf.xml'
 
 CATEGORIES_GENDER_XPATHS  = [
                                 {
@@ -52,7 +50,7 @@ PAGE_COUNT_XPATH = ".//select/@data-totalpagecount"
 
 STYLENAME_XPATH = ".//span[@id='fp-data']/@data-productname"
 
-DEFAULTIMAGE_XPATH = ".//span[@itemprop='image']/@content"
+DEFAULTIMAGE_XPATH = ".//meta[@property='og:image']/@content"
 
 IMAGEURLLIST_XPATH = ".//figure/a/@data-zoom"
 
@@ -73,3 +71,5 @@ STYLEID_XPATH = ".//span[@id='fp-data']/@data-productid"
 SKU_PATH = ".//span[@itemprop='sku']/@content"
 
 STOCK_XPATH = ".//*[@itemprop='availability']/@href"
+
+PRODUCT_JSON = ".//script[@type='application/ld+json']/text()"

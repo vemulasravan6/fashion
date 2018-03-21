@@ -31,17 +31,23 @@ import os
 
 #print('Beginning file download with wget module')
 
-url = 'https://www.lefties.com/9/info/sitemaps/sitemap-home-categories-lf-mx-0.xml.gz'
+compressed_url = 'https://www.lefties.com/9/info/sitemaps/sitemap-home-categories-lf-mx-0.xml.gz'
 
-def readDataFromUrl(url):
+plain_url = 'https://www.lefties.com/sa/girls/shoes/pompom-ballerinas-c1094517p500629982.html'
+
+def readDataFromUrl(url, compressedFile = False):
     path = url.split('/')[-1]
     data_download_status = False
     file_content = ''
     shell_cmd = "wget -O " + path + " -q " + url
     try:
+        print(shell_cmd)
         data = subprocess.Popen(shell_cmd, shell=True, stdout=subprocess.PIPE).stdout.read()
         data_download_status = True
-        f = gzip.open(path, 'rb')
+        if compressedFile:
+            f = gzip.open(path, 'rb')
+        else:
+            f = open(path, 'r')
         file_content = f.read().lower()
         f.close()
         os.remove(path)
@@ -51,7 +57,8 @@ def readDataFromUrl(url):
         pass
     return file_content,data_download_status
 
-#print(readDataFromUrl('https://www.lefties.com/9/info/sitemaps/sitemap-home-categories-lf-es-0.xml.gz'))
+
+#print(readDataFromUrl(plain_url)[0])
 
 #print(data)
 #wget.download(url, path)

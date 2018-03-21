@@ -17,15 +17,16 @@ import wget
 import gzip
 import subprocess
 import os
+from scrapy.http import HtmlResponse
 
 
 class LeftiesSpider(scrapy.Spider):
     name = conf.SOURCE
-    start_urls  = ['https://www.lefties.com/9/info/sitemaps/sitemap-index-products-lf.xml'] # [conf.URL]
-    base_url    = conf.BASE_URL
+    start_urls  =  [conf.START_URL]
+    #base_url    = conf.BASE_URL
     handle_httpstatus_list = [200,404,500]
 
-    def readDataFromUrl(self, url):
+    def readDataFromUrl(self, url, compressedFile=True):
         path = url.split('/')[-1]
         data_download_status = False
         file_content = ''
@@ -33,7 +34,10 @@ class LeftiesSpider(scrapy.Spider):
         try:
             data = subprocess.Popen(shell_cmd, shell=True, stdout=subprocess.PIPE).stdout.read()
             data_download_status = True
-            f = gzip.open(path, 'rb')
+            if compressedFile:
+                f = gzip.open(path, 'rb')
+            else:
+                f = open(path, 'r')
             file_content = f.read().lower()
             f.close()
             os.remove(path)
@@ -46,114 +50,84 @@ class LeftiesSpider(scrapy.Spider):
     def parse(self, response):
         for url in  (Selector(text=response.body).xpath('//loc/text()').extract()):
             sitemapData = self.readDataFromUrl(url)
-            for productUrl in (Selector(text=sitemapData).xpath('//loc/text()').extract()):
-                print(productUrl)
-            print("="*100)
+            for productUrl in (Selector(text=sitemapData[0]).xpath('//loc/text()').extract()):
 
+                pdpUrlContent = self.readDataFromUrl(productUrl, compressedFile=False)[0]
 
-        #print (gzip.GzipFile(fileobj=StringIO.StringIO(urllib2.urlopen(DOWNLOAD_LINK).read()), mode='rb').read())
+                scrapyResponseObject = HtmlResponse(url=productUrl, body=pdpUrlContent, encoding='utf-8')
 
-        '''
-        priority = 50000
-        for category in  conf.CATEGORIES_GENDER_XPATHS:
-            page_size = conf.PAGE_SIZE
-            for url in response.xpath(category['XPATH']).extract():
-                priority = priority - 1
-                request = scrapy.Request(url=url+'?recordsPerPage=48&page=1', callback=self.parseCategoryPage, priority=priority)
-                request.meta['gender'] = category['GENDER']
-                yield request
-        '''
+                self.parsePdpPage(scrapyResponseObject)
 
-    def parseCategoryPage(self,response):
-        per_page_count = 48
-        item_count = int(re.findall("(\d+)", response.xpath(conf.ITEM_COUNT_XPATH).extract()[0])[0])
-        print(per_page_count,item_count)
-        page_count = item_count / per_page_count
-        #page_no = 0
-        priority = 5000
-        for i in range(1, page_count+2):
-            start_from = i*per_page_count
-            priority = priority - 1
-            url = response.url.replace("page=1","page="+str(i))
-            request = scrapy.Request(url=url, callback=self.parsePaginated, priority=priority)
-            request.meta['PageNo'] = page_no
-            request.meta['PerPageCount'] = per_page_count
-            request.meta['gender'] = response.meta['gender']
-            page_no = page_no + 1
-            # for key in response.meta.keys():
-            #    request.meta[key] = response.meta[key]
-            yield request
-
-    def parsePaginated(self,response):
-        blocks = response.xpath(conf.PRODUCT_BLOCK_XPATH)
-        priority = 5000
-        input_rank = response.meta['PageNo'] * response.meta['PerPageCount']
-        print(response.url + ' #pageno : ' + str(response.meta['PageNo'])+ ' #rankstart : '+str(input_rank))
-        for block in blocks[:25]:
-            priority = priority - 1
-            input_rank = input_rank + 1
-            pdpUrl  = self.base_url+block.xpath(conf.PRODUCT_URL_INSIDE_BLOCK_XPATH).extract()[0]
-            request = Request(pdpUrl, callback=self.parsePdpPage, priority=priority)
-            #request.meta['category'] = response.meta['category']
-            request.meta['rank'] = input_rank
-            request.meta['paginatedUrl'] = response.url
-            request.meta['gender'] = response.meta['gender']
-            yield request
 
     def parsePdpPage(self,response):
 
-        print(' Crawling pdp # '+response.url+' '+str(response.meta['rank'])+ ' '+' # '+response.meta['paginatedUrl'])
-
         fdi = FashionDbItem()
 
-        fdi['paginatedUrl'] = response.meta['paginatedUrl']
-
-        fdi['gender'] = response.meta['gender']
-
-        fdi['rank'] =  response.meta['rank']
-
         fdi['url'] = response.url
+
+        productJson = ''
+
+        try:
+            productJson = response.xpath(conf.PRODUCT_JSON).extract()[0] #json.loads()
+            productJson = json.loads(productJson)
+            fdi['brand'] = productJson['brand']
+            fdi['currency'] = productJson['offers']['pricecurrency']
+            fdi['category'] = productJson['offers']['category'].split('-')[-1].strip()
+            fdi['gender'] = productJson['offers']['category'].split('-')[0].strip()
+            fdi['articleType'] = productJson['offers']['category'].split('-')[-1].strip()
+            fdi['styleName'] = productJson['name']
+            fdi['defaultImage'] = productJson['image']
+            fdi['description'] = productJson['description']
+            fdi['selling_price'] = float(productJson['offers']['price'])
+            fdi['mrp'] = float(productJson['offers']['price'])
+            print(fdi)
+        except:
+            fdi['brand'] = ''
+            fdi['currency'] = ''
+            fdi['category'] = ''
+            fdi['gender'] = ''
+            fdi['articleType'] = ''
+            fdi['styleName'] = ''
+            fdi['defaultImage'] = ''
+            fdi['description'] = ''
+            fdi['selling_price'] = ''
+            fdi['mrp'] = ''
+            pass
 
         fdi['source'] = self.name
 
         fdi['run_date'] = str(datetime.datetime.now()).split()[0]
 
         try:
-            fdi['brand'] = response.xpath(conf.BRAND_XPATH).extract()[0]
+            sizes = []
+
+            istoreid = re.findall('inditex.istoreid = (.*?);', response.body)[0]
+
+            icatalogid = re.findall("inditex.icatalogid = (.*?);", response.body)[0]
+
+            iproductid = re.findall("inditex.iproductid = (.*?);", response.body)[0]
+
+            apiUrl = 'https://www.lefties.com/itxrest/2/catalog/store/' + istoreid + '/' + icatalogid + '/category/0/product/' + iproductid + '/detail?languageId=-1&appId=1'
+
+            jsonResp = requests.get(apiUrl).json()
+
+            for size in jsonResp['detail']['colors'][0]['sizes']:
+                sizes.append(size['name'])
+
+            fdi['sizes'] =  sizes
+
+            fdi['styleId'] = jsonResp['id']
+
         except:
-            fdi['brand'] = ''
+            fdi['sizes'] = ''
+            fdi['styleId'] = ''
             pass
 
-        try:
-            fdi['currency'] = response.xpath(conf.CURRENCY_XPATH).extract()[0]  #conf.CURRENCY_XPATH
-        except:
-            fdi['currency'] = ''#'GBP'
-            pass
+        print(fdi)
 
-        try:
-            fdi['category'] = response.xpath(conf.ARTICLETYPE_XPATH).extract()[0]
-        except:
-            fdi['category'] = ""
-            pass
+        #yield fdi
 
-        try:
-            fdi['articleType'] = response.xpath(conf.ARTICLETYPE_XPATH).extract()[0]
-        except:
-            fdi['articleType'] = ''
-            pass
-
-        try:
-            fdi['styleName'] = response.xpath(conf.STYLENAME_XPATH).extract()[0]
-        except:
-            fdi['styleName'] = ''
-            pass
-
-        try:
-            fdi['defaultImage'] = response.xpath(conf.DEFAULTIMAGE_XPATH).extract()[0]
-        except:
-            fdi['defaultImage'] = ''
-            pass
-
+        '''
         try:
             fdi['imageUrlList'] = response.xpath(conf.IMAGEURLLIST_XPATH).extract()
         except:
@@ -161,40 +135,10 @@ class LeftiesSpider(scrapy.Spider):
             pass
 
         try:
-            fdi['description'] = "".join(response.xpath(conf.DESCRIPTION_XPATH).extract()).strip()
-        except:
-            fdi['description'] = ''
-            pass
-
-        try:
             fdi['colour'] = response.xpath(conf.COLOUR_XPATH).extract()[0]
         except:
             fdi['colour'] = ''
-            pass
-
-        try:
-            fdi['sizes'] =  json.loads(response.xpath(conf.SIZES_XPATH).extract()[0])
-        except:
-            fdi['sizes'] = ''
-            pass
-
-        try:
-            fdi['selling_price'] = float(response.xpath(conf.SELLING_PRICE_XPATH).extract()[0])
-        except:
-            fdi['selling_price'] = ''
-            pass
-
-        try:
-            fdi['mrp'] = float(response.xpath(conf.MRP_XPATH).extract()[0])
-        except:
-            fdi['mrp'] = ''
-            pass
-
-        try:
-            fdi['styleId'] = response.xpath(conf.STYLEID_XPATH).extract()[0]
-        except:
-            fdi['styleId'] = ''
-            pass
+            pass 
 
         try:
             fdi['sku'] = response.xpath(conf.SKU_PATH).extract()[0]
@@ -207,8 +151,7 @@ class LeftiesSpider(scrapy.Spider):
         except:
             fdi['stock'] = ''
             pass
+        
+        '''
 
-        print(fdi)
-
-        yield fdi
 
