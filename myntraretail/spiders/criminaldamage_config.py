@@ -10,23 +10,23 @@ PAGINATED_LIST = 'PAGINATED_LIST'
 
 SOURCE      = 'criminaldamage'
 
-URL         = 'https://www.cosstores.com/gb/'
+START_URL         = 'https://www.criminaldamage.co.uk/'
 
 CATEGORIES_GENDER_XPATHS  = [
                                 {
                                     "GENDER"    : "MENS",
                                     "CATEGORY"  : "MENSWEAR",
-                                    "XPATH"     : ".//*[@id='nav-wide']/li[2]/div/ul/li/a/@href"
+                                    "XPATH"     : ".//*[@id='nav-wide']/li[2]/div/ul/li"
                                 },
                                 {
                                     "GENDER": "WOMEN",
                                     "CATEGORY": "WOMENSWEAR",
-                                    "XPATH": ".//*[@id='nav-wide']/li[3]/div/ul/li/a/@href"
+                                    "XPATH": ".//*[@id='nav-wide']/li[3]/div/ul/li"
                                 },
                                 {
                                     "GENDER": "UNISEX",
                                     "CATEGORY": "ACCESSORIES",
-                                    "XPATH": ".//*[@id='nav-wide']/li[4]/div/ul/li/a/@href"
+                                    "XPATH": ".//*[@id='nav-wide']/li[4]/div/ul/li"
                                 }
                             ]
 
@@ -34,36 +34,42 @@ CATEGORIES_GENDER_XPATHS  = [
 
 '''
 
-PRODUCT_BLOCK_XPATH = ".//li[contains(@class,'item product')]"
+PRODUCT_BLOCK_XPATH = ".//div[@class='product-container']"
 
-PRODUCT_URL_INSIDE_BLOCK_XPATH = ".//a/@href"
+PRODUCT_URL_INSIDE_BLOCK_XPATH = ".//h2/a/@href"
 
 CATEGORY_XPATH = ".//div[@class='upper-breadcrumb']/div/a[last()]/text()"
 
 ARTICLETYPE_XPATH = ".//*[@id='breadcrumb']/ul/li[last()-1]/span/a/text()"
 
-CURRENCY_XPATH = ".//meta[@property='og:price:currency']/@content"
+CURRENCY_XPATH = ".//meta[@itemprop='priceCurrency']/@content"
 
 #ITEM_COUNT_XPATH = ".//div[@id='primary-content']/div[@class='product-grid__col--major']//div/@data-result-total"
 
 #PER_PAGE_COUNT_XPATH = ".//div[@id='primary-content']/div[@class='product-grid__col--major']//div/@data-result-limit"
 
-STYLENAME_XPATH = ".//meta[@property='og:title']/@content"
+STYLENAME_XPATH = ".//div[@itemprop='name']/h1/text()"
 
-DEFAULTIMAGE_XPATH = ".//meta[@property='og:image']/@content"
+DEFAULTIMAGE_XPATH = ".//span[@class='image_url']/text()"
 
-IMAGEURLLIST_XPATH = ".//ul[@class='slides']/li/div/img/@src"
+IMAGEURLLIST_XPATH = ".//div/ul/li/a/img/@src"
 
-DESCRIPTION_XPATH= ".//meta[@property='og:description']/@content"
+DESCRIPTION_XPATH= ".//*[@itemprop='description']//text()"
 
 COLOUR_XPATH = ".//meta[@property='og:product:color']/@content"
 
 GENDER_XPATH = ".//div[@class='upper-breadcrumb']/div/a[1]/text()"
 
-SIZES_XPATH = ".//div[contains(@class,'productSizes')]/label/text()"
+SIZES_XPATH = ".//*[@id='attribute169']/option/text()"
 
-SELLING_PRICE_XPATH = ".//meta[@property='og:price:amount']/@content"
+SELLING_PRICE_XPATH = ".//meta[@itemprop='price']/@content"
 
-MRP_XPATH = ".//meta[@property='og:price:amount']/@content"
+MRP_XPATH = ".//meta[@itemprop='price']/@content"
 
 STYLEID_XPATH = ".//div[@id='productContainer']/div[@class='productImages']/@data-selected-article"
+
+STOCK_XPATH = ".//link[@itemprop='availability']/@href"
+
+STYLEID_REGEX = "productId:'(.*?)',"
+
+SIZES_REGEX = ''

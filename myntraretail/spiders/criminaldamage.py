@@ -6,22 +6,22 @@ from scrapy.http.request import Request
 import time
 import datetime
 import criminaldamage_config as conf
+import os
 
 class criminaldamageUkSpider(scrapy.Spider):
     name = conf.SOURCE
-    start_urls = ['https://www.criminaldamage.co.uk/']
+    start_urls = [conf.START_URL]
     base_url = conf.URL
 
     def parse(self, response):
         priority = 5000
         #print(response.url)
         for category in  conf.CATEGORIES_GENDER_XPATHS:
-            for url in response.xpath(category['XPATH']).extract():
-                print(url)
+            for url_block in response.xpath(category['XPATH']):
+                url = url_block.xpath(".//a/@href").extract()[0]
                 priority = priority - 1
-                #url = self.base_url+url
                 request = scrapy.Request(url=url, callback=self.parseCategoryPage, priority=priority)
-                request.meta['category'] = category['CATEGORY']
+                request.meta['category'] = url_block.xpath(".//a/span/text()").extract()[0]
                 request.meta['gender'] = category['GENDER']
                 yield request
 
@@ -29,20 +29,14 @@ class criminaldamageUkSpider(scrapy.Spider):
     def parseCategoryPage(self,response):
         print(response.url)
         page_count = int(re.findall("(\d+)", response.xpath(".//*[@class='pager-box']/text()").extract()[0])[1])
-        #page_count = 3
+        page_count = 2
         page_no = 0
         priority = 5000
         for i in range(1, page_count+1):
             #print(i,page_count)
             #start_from = i*per_page_count
             priority = priority - 1
-
-            #https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&p=3&is_scroll=1
-
             url = response.url+'?is_ajax=1&is_scroll=1&p='+str(i)
-
-            print(url)
-            '''
             request = scrapy.Request(url=url, callback=self.parsePaginated, priority=priority)
             request.meta['PageNo'] = page_no
             #request.meta['PerPageCount'] = per_page_count
@@ -52,18 +46,17 @@ class criminaldamageUkSpider(scrapy.Spider):
             # for key in response.meta.keys():
             #    request.meta[key] = response.meta[key]
             yield request
-            '''
 
 
     def parsePaginated(self,response):
         blocks = response.xpath(conf.PRODUCT_BLOCK_XPATH)
         priority = 5000
-        input_rank = response.meta['PageNo'] * response.meta['PerPageCount']
+        input_rank = response.meta['PageNo'] * len(blocks)
 
-        for block in blocks[:50]:
+        for block in blocks:
             priority = priority - 1
             input_rank = input_rank + 1
-            pdpUrl  = self.base_url+block.xpath(conf.PRODUCT_URL_INSIDE_BLOCK_XPATH).extract()[0]
+            pdpUrl  = block.xpath(conf.PRODUCT_URL_INSIDE_BLOCK_XPATH).extract()[0]
             request = Request(pdpUrl, callback=self.parsePdpPage, priority=priority)
             request.meta['category'] = response.meta['category']
             request.meta['gender'] = response.meta['gender']
@@ -92,7 +85,7 @@ class criminaldamageUkSpider(scrapy.Spider):
         fdi['run_date'] = str(datetime.datetime.now()).split()[0]
 
         try:
-            fdi['brand'] = response.xpath(conf.BRAND_XPATH).extract()[0]
+            fdi['brand'] = ''#response.xpath(conf.BRAND_XPATH).extract()[0]
         except:
             fdi['brand'] = ''
             pass
@@ -104,7 +97,7 @@ class criminaldamageUkSpider(scrapy.Spider):
             pass
 
         try:
-            fdi['articleType'] = response.xpath(conf.ARTICLETYPE_XPATH).extract()[0]
+            fdi['articleType'] = response.meta['category']
         except:
             fdi['articleType'] = ''
             pass
@@ -144,7 +137,9 @@ class criminaldamageUkSpider(scrapy.Spider):
             pass
 
         try:
-            fdi['sizes'] =  list(map(lambda x:x.strip(),response.xpath(conf.SIZES_XPATH).extract()))
+            fdi['sizes'] =  re.findall('"label":"(.*?)"',response.body)
+            if 'Size' in fdi['sizes']:
+                fdi['sizes'].remove('Size')
         except:
             fdi['sizes'] = ''
             pass
@@ -162,11 +157,17 @@ class criminaldamageUkSpider(scrapy.Spider):
             pass
 
         try:
-            fdi['styleId'] = response.xpath(conf.STYLEID_XPATH).extract()[0]
+            fdi['styleId'] = re.findall(conf.STYLEID_REGEX,response.body)[0]
         except:
             fdi['styleId'] = ''
             pass
 
+        try:
+            fdi['stock'] = "In Stock" if "InStock" in response.xpath(conf.STOCK_XPATH).extract()[
+                0] else 'Out of stock'
+        except:
+            fdi['stock'] = ''
+            pass
 
         print(fdi)
 

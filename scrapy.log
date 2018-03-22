@@ -1,2 +1,1377 @@
 2018-03-22 15:53:00 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
 2018-03-22 15:53:00 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'BOT_NAME': 'myntraretail', 'SPIDER_MODULES': ['myntraretail.spiders'], 'LOG_ENABLED': False, 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 15:54:41 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-22 15:54:41 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 15:54:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-22 15:54:41 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-22 15:54:41 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-22 15:54:41 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-03-22 15:54:41 [scrapy.core.engine] INFO: Spider opened
+2018-03-22 15:54:41 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-22 15:54:41 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-22 15:54:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/> (referer: None)
+2018-03-22 15:54:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/hoodies.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/jackets.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/joggers.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/sweatshirts.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/accessories.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/t-shirts-vests.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/shoes.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/tracksuits.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.criminaldamage.co.uk/womens/leggings.html> (failed 1 times): 503 Service Unavailable
+2018-03-22 15:54:51 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.criminaldamage.co.uk/womens/joggers.html> (failed 1 times): 503 Service Unavailable
+2018-03-22 15:54:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/denim.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/crop-tops.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/t-shirts-vests.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/jackets.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/sweatshirts.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/zodiac-collection.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/leggings.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/hoodies.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/joggers.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 15:54:54 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-22 15:54:54 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 12194,
+ 'downloader/request_count': 26,
+ 'downloader/request_method_count/GET': 26,
+ 'downloader/response_bytes': 382183,
+ 'downloader/response_count': 26,
+ 'downloader/response_status_count/200': 24,
+ 'downloader/response_status_count/503': 2,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 22, 10, 24, 54, 140928),
+ 'log_count/DEBUG': 27,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 1,
+ 'response_received_count': 24,
+ 'scheduler/dequeued': 26,
+ 'scheduler/dequeued/memory': 26,
+ 'scheduler/enqueued': 26,
+ 'scheduler/enqueued/memory': 26,
+ 'start_time': datetime.datetime(2018, 3, 22, 10, 24, 41, 766357)}
+2018-03-22 15:54:54 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-03-22 15:59:41 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-22 15:59:41 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'LOGSTATS_INTERVAL': 0, 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 15:59:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-22 15:59:41 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-22 15:59:41 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-22 15:59:41 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-03-22 15:59:41 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-03-22 15:59:47 [scrapy.core.engine] INFO: Spider opened
+2018-03-22 15:59:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/hoodies.html?is_ajax=1&is_scroll=1&p=1> (referer: None)
+2018-03-22 16:04:12 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-22 16:04:12 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 16:04:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-22 16:04:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-22 16:04:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-22 16:04:12 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-03-22 16:04:12 [scrapy.core.engine] INFO: Spider opened
+2018-03-22 16:04:12 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-22 16:04:12 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-03-22 16:04:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/> (referer: None)
+2018-03-22 16:04:15 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-03-22 16:04:15 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-03-22 16:04:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:04:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:04:16 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2018-03-22 16:04:16 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.criminaldamage.co.uk/mens/joggers.html> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-03-22 16:04:16 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.criminaldamage.co.uk/mens/jackets.html> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'CHUNK_LENGTH' state, still expecting more data to get to 'FINISHED' state.>]
+2018-03-22 16:04:16 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.criminaldamage.co.uk/mens/hoodies.html> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'CHUNK_LENGTH' state, still expecting more data to get to 'FINISHED' state.>]
+2018-03-22 16:04:16 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.criminaldamage.co.uk/mens/accessories.html> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-03-22 16:04:16 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.criminaldamage.co.uk/mens/t-shirts-vests.html> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+2018-03-22 16:04:34 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-22 16:04:34 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 16:04:34 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-22 16:04:34 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-22 16:04:34 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-22 16:04:34 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-03-22 16:04:34 [scrapy.core.engine] INFO: Spider opened
+2018-03-22 16:04:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-22 16:04:34 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-03-22 16:04:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/> (referer: None)
+2018-03-22 16:04:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:04:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:04:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:04:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 16:04:43 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+Traceback (most recent call last):
+  File "/home/vemula/.local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/vemula/PycharmProjects/myntra/myntraretail/myntraretail/spiders/criminaldamage.py", line 54, in parsePaginated
+    input_rank = response.meta['PageNo'] * response.meta['PerPageCount']
+KeyError: 'PerPageCount'
+2018-03-22 16:04:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 16:04:44 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+Traceback (most recent call last):
+  File "/home/vemula/.local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/vemula/PycharmProjects/myntra/myntraretail/myntraretail/spiders/criminaldamage.py", line 54, in parsePaginated
+    input_rank = response.meta['PageNo'] * response.meta['PerPageCount']
+KeyError: 'PerPageCount'
+2018-03-22 16:04:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 16:04:47 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+Traceback (most recent call last):
+  File "/home/vemula/.local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/vemula/PycharmProjects/myntra/myntraretail/myntraretail/spiders/criminaldamage.py", line 54, in parsePaginated
+    input_rank = response.meta['PageNo'] * response.meta['PerPageCount']
+KeyError: 'PerPageCount'
+2018-03-22 16:04:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 16:04:48 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+Traceback (most recent call last):
+  File "/home/vemula/.local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/vemula/PycharmProjects/myntra/myntraretail/myntraretail/spiders/criminaldamage.py", line 54, in parsePaginated
+    input_rank = response.meta['PageNo'] * response.meta['PerPageCount']
+KeyError: 'PerPageCount'
+2018-03-22 16:04:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 16:04:50 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+Traceback (most recent call last):
+  File "/home/vemula/.local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/vemula/PycharmProjects/myntra/myntraretail/myntraretail/spiders/criminaldamage.py", line 54, in parsePaginated
+    input_rank = response.meta['PageNo'] * response.meta['PerPageCount']
+KeyError: 'PerPageCount'
+2018-03-22 16:04:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 16:04:56 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+Traceback (most recent call last):
+  File "/home/vemula/.local/lib/python2.7/site-packages/twisted/internet/defer.py", line 653, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/vemula/PycharmProjects/myntra/myntraretail/myntraretail/spiders/criminaldamage.py", line 54, in parsePaginated
+    input_rank = response.meta['PageNo'] * response.meta['PerPageCount']
+KeyError: 'PerPageCount'
+2018-03-22 16:04:56 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-22 16:04:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4888,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 166990,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 10,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 22, 10, 34, 56, 237288),
+ 'log_count/DEBUG': 11,
+ 'log_count/ERROR': 6,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 2,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'spider_exceptions/KeyError': 6,
+ 'start_time': datetime.datetime(2018, 3, 22, 10, 34, 34, 806472)}
+2018-03-22 16:04:56 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-03-22 16:05:53 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-22 16:05:53 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 16:05:53 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-22 16:05:53 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-22 16:05:53 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-22 16:05:53 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-03-22 16:05:53 [scrapy.core.engine] INFO: Spider opened
+2018-03-22 16:05:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-22 16:05:53 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-03-22 16:05:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/> (referer: None)
+2018-03-22 16:05:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:05:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:05:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:05:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 16:05:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 16:05:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 16:05:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 16:05:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 16:05:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 16:05:59 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-22 16:05:59 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 4888,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 156355,
+ 'downloader/response_count': 10,
+ 'downloader/response_status_count/200': 10,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 22, 10, 35, 59, 777351),
+ 'log_count/DEBUG': 11,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 2,
+ 'response_received_count': 10,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'start_time': datetime.datetime(2018, 3, 22, 10, 35, 53, 405764)}
+2018-03-22 16:05:59 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-03-22 16:26:44 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-22 16:26:44 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 16:26:44 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-22 16:26:44 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-22 16:26:44 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-22 16:26:44 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-03-22 16:26:44 [scrapy.core.engine] INFO: Spider opened
+2018-03-22 16:26:44 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-22 16:26:44 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-03-22 16:26:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/> (referer: None)
+2018-03-22 16:27:09 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-22 16:27:09 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 16:27:09 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-22 16:27:09 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-22 16:27:09 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-22 16:27:09 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-03-22 16:27:09 [scrapy.core.engine] INFO: Spider opened
+2018-03-22 16:27:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-22 16:27:09 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-03-22 16:27:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/> (referer: None)
+2018-03-22 16:29:59 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-22 16:29:59 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 16:29:59 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-22 16:29:59 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-22 16:29:59 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-22 16:29:59 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-03-22 16:29:59 [scrapy.core.engine] INFO: Spider opened
+2018-03-22 16:29:59 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-22 16:29:59 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-03-22 16:30:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/> (referer: None)
+2018-03-22 16:30:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/hoodies.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/jackets.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/joggers.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/accessories.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/sweatshirts.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/t-shirts-vests.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/tracksuits.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/shoes.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/t-shirts-vests.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/sweatshirts.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/hoodies.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/denim.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/crop-tops.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 16:30:09 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2018-03-22 16:30:09 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2018-03-22 16:30:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/denim.html)
+2018-03-22 16:30:10 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2018-03-22 16:30:26 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-22 16:30:26 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 16:30:26 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-22 16:30:26 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-22 16:30:26 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-22 16:30:26 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-03-22 16:30:26 [scrapy.core.engine] INFO: Spider opened
+2018-03-22 16:30:26 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-22 16:30:26 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-03-22 16:30:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/> (referer: None)
+2018-03-22 16:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 16:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 16:30:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/denim.html)
+2018-03-22 16:30:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/denim.html)
+2018-03-22 16:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 16:30:34 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.criminaldamage.co.uk/carter-jean-blue-wash.html> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-03-22 16:30:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 16:30:35 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=2> (failed 1 times): 503 Service Unavailable
+2018-03-22 16:30:35 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=1> (failed 1 times): 503 Service Unavailable
+2018-03-22 16:30:37 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.criminaldamage.co.uk/cali-ls-top.html> (failed 1 times): 503 Service Unavailable
+2018-03-22 16:30:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 16:30:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html)
+2018-03-22 16:30:39 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://www.criminaldamage.co.uk/dalson-crop-hood.html> (failed 1 times): 503 Service Unavailable
+2018-03-22 16:30:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/carter-jean-blue-wash.html> (referer: https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 16:53:41 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-22 16:53:41 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 16:53:41 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-22 16:53:41 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-22 16:53:41 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-22 16:53:41 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-03-22 16:53:41 [scrapy.core.engine] INFO: Spider opened
+2018-03-22 16:53:41 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-22 16:53:41 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-03-22 16:53:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/> (referer: None)
+2018-03-22 16:53:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:53:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:53:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:53:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:53:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:53:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 16:53:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 16:53:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 16:53:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/denim.html)
+2018-03-22 16:53:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/denim.html)
+2018-03-22 16:53:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 16:53:47 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.criminaldamage.co.uk/carter-jean-blue-wash.html> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-03-22 16:53:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 16:53:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html)
+2018-03-22 16:53:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html)
+2018-03-22 16:53:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 16:53:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 16:53:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/accessories/bags.html)
+2018-03-22 16:53:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/accessories/bags.html)
+2018-03-22 16:53:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/cali-ls-top.html> (referer: https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 16:54:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/cali-ls-top.html> (referer: None)
+2018-03-22 17:02:04 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-22 17:02:04 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 17:02:04 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-22 17:02:04 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-22 17:02:04 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-22 17:02:04 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-03-22 17:02:04 [scrapy.core.engine] INFO: Spider opened
+2018-03-22 17:02:04 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-22 17:02:04 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-03-22 17:02:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/> (referer: None)
+2018-03-22 17:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:02:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:02:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 17:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 17:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/denim.html)
+2018-03-22 17:02:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/denim.html)
+2018-03-22 17:02:09 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.criminaldamage.co.uk/carter-jean-blue-wash.html> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-03-22 17:02:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 17:02:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 17:02:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html)
+2018-03-22 17:02:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 17:02:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html)
+2018-03-22 17:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 17:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/accessories/bags.html)
+2018-03-22 17:02:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/accessories/bags.html)
+2018-03-22 17:02:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/cali-ls-top.html> (referer: https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:02:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/thorn-hood-black-multi.html> (referer: https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2)
+2018-03-22 17:05:16 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-22 17:05:16 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 17:05:16 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-22 17:05:16 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-22 17:05:16 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-22 17:05:16 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-03-22 17:05:16 [scrapy.core.engine] INFO: Spider opened
+2018-03-22 17:05:16 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-22 17:05:16 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-03-22 17:05:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/> (referer: None)
+2018-03-22 17:05:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:05:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:05:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:05:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:05:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:05:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:05:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 17:05:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 17:05:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/denim.html)
+2018-03-22 17:05:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/denim.html)
+2018-03-22 17:05:22 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.criminaldamage.co.uk/carter-jean-blue-wash.html> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-03-22 17:05:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 17:05:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 17:05:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 17:05:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html)
+2018-03-22 17:05:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 17:05:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html)
+2018-03-22 17:05:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/accessories/bags.html)
+2018-03-22 17:05:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/cali-ls-top.html> (referer: https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:05:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/cali-ls-top.html>
+{'articleType': u'Shop All',
+ 'brand': '',
+ 'category': u'Shop All',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/a/calils_top_fullbody_1.jpg',
+ 'description': u"Yellow long sleeve top with photo palm print and side stripe on both sleeves.\n\xa0\n\u2022 Regular fit\n\u2022 Round Neck\n\u2022 front photo print\n\u2022 Red branding on the sleeves\n\xa0\n\u2022 100% cotton\nModel is wearing size M\nModel's height: 5'9\xa0(180cm)",
+ 'gender': 'MENS',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/cali_ls_top_close_up_front_1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/calils_top_fullbody_1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/cali_ls_top_close_up_back_1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/calils_top_close_up_1.jpg'],
+ 'mrp': 35.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 35.0,
+ 'sizes': None,
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15865',
+ 'styleName': u'Cali LS Top',
+ 'url': 'https://www.criminaldamage.co.uk/cali-ls-top.html'}
+2018-03-22 17:05:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/thorn-hood-black-multi.html> (referer: https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2)
+2018-03-22 17:05:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/thorn-hood-black-multi.html>
+{'articleType': u'Shop All',
+ 'brand': '',
+ 'category': u'Shop All',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/t/h/thorn-hood-3.jpg',
+ 'description': u"\u2022 Rose print around neck\n\u2022 Embossed logo\n\u2022 Regular fit\n\xa0\n100% cotton\n\xa0\nModel is wearing size M\nModel's height: 6'0\xa0(182cm)",
+ 'gender': 'MENS',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/t/h/thorn-hood-4.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/t/h/thorn-hood-2.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/t/h/thorn-hood-3.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/t/h/thorn-hood-1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/w/i/wipper-skinny-black.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/b/l/black-front.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/b/l/black-skinny.jpg'],
+ 'mrp': 60.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2',
+ 'rank': 61,
+ 'run_date': '2018-03-22',
+ 'selling_price': 60.0,
+ 'sizes': None,
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15067',
+ 'styleName': u'Thorn Hood - Black/Multi',
+ 'url': 'https://www.criminaldamage.co.uk/thorn-hood-black-multi.html'}
+2018-03-22 17:05:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/carter-jean-blue-wash.html> (referer: https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:05:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/carter-jean-blue-wash.html>
+{'articleType': u'Denim',
+ 'brand': '',
+ 'category': u'Denim',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/a/carter-blue-close-up.jpg',
+ 'description': u"PREMIUM range jeans distressed at knee and thigh. Chopper/logo embossed silver rivets and button, with synthetic waistband logo.\n\xa0\n\u2022 Men's cut\n\u2022 Branded silver button and rivets\n\u2022 Zipper fly\n\u2022 Stretch fit\n\xa0\n65% cotton 33% Polyester 2% elastane\n\xa0\nModel is wearing: EU-size 32\nModels height: 6'1\xa0(185cm)",
+ 'gender': 'MENS',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/carter-blue-front.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/carter-blue-close-up.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/carter-blue-side.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/carter-blue-back.jpg'],
+ 'mrp': 65.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 65.0,
+ 'sizes': None,
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15087',
+ 'styleName': u'Carter Jeans - Blue Wash',
+ 'url': 'https://www.criminaldamage.co.uk/carter-jean-blue-wash.html'}
+2018-03-22 17:05:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/dalson-crop-hood.html> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:05:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/dalson-crop-hood.html>
+{'articleType': u'New Arrivals',
+ 'brand': '',
+ 'category': u'New Arrivals',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/r/criminal_damage_21111735033.jpg',
+ 'description': u'Black crop hood with Criminal Damage branding on the right sleeve and long drawstring.\n\xa0\n\u2022 Long drawstring\n\u2022 Long sleeces\n\u2022 Yellow stripe\n\xa0\n100% cotton\n\xa0\nModel is wearing size S',
+ 'gender': 'WOMEN',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735033.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735044.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735039.jpg'],
+ 'mrp': 40.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 40.0,
+ 'sizes': None,
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15489',
+ 'styleName': u'Dalson Crop Hood - Black/Yellow',
+ 'url': 'https://www.criminaldamage.co.uk/dalson-crop-hood.html'}
+2018-03-22 17:05:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/disrupt-cap-pink.html> (referer: https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:05:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/disrupt-cap-pink.html>
+{'articleType': u'Caps',
+ 'brand': '',
+ 'category': u'Caps',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/d/cd_11jan17-357.jpg',
+ 'description': u'Camouflage print cap featuring Criminal Damage faux leather tab at the front\n\xa0\n\u2022 Adjustable size\n\u2022 Rubbery faux suede material\n\u2022 Curved peak\n\u2022 Snapback strap\n\xa0\n100% Polyester',
+ 'gender': 'UNISEX',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/d/cd_11jan17-357.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/d/cd_11jan17-358.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/d/cd_11jan17-359.jpg'],
+ 'mrp': 15.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 15.0,
+ 'sizes': None,
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '13435',
+ 'styleName': u'Disrupt Cap - Pink/Camo',
+ 'url': 'https://www.criminaldamage.co.uk/disrupt-cap-pink.html'}
+2018-03-22 17:05:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/orie-hood-black-14774.html> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=2)
+2018-03-22 17:05:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/orie-hood-black-14774.html>
+{'articleType': u'Shop All',
+ 'brand': '',
+ 'category': u'Shop All',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/r/criminal_damage_21111735609.jpg',
+ 'description': u"Orie Hood - Black\n\xa0\n\u2022 Embroidered dragon print on back\n\u2022 White Criminal Damage logo on chest\n\u2022 Regular fit\n\xa0\n100% cotton\n\xa0\nModel is wearing size M\nModel's height: 5'9\xa0(160cm)",
+ 'gender': 'WOMEN',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735609.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735608.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735600.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735595.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/b/l/black-front.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/b/l/black-skinny.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/w/i/wipper-skinny-black.jpg'],
+ 'mrp': 55.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=2',
+ 'rank': 61,
+ 'run_date': '2018-03-22',
+ 'selling_price': 55.0,
+ 'sizes': None,
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '14683',
+ 'styleName': u'Orie Hood - Black',
+ 'url': 'https://www.criminaldamage.co.uk/orie-hood-black-14774.html'}
+2018-03-22 17:05:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/accessories/bags.html)
+2018-03-22 17:05:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/clapton-crop-hood-black.html> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:05:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/clapton-crop-hood-black.html>
+{'articleType': u'Shop All',
+ 'brand': '',
+ 'category': u'Shop All',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/r/criminal_damage_21111735069.jpg',
+ 'description': u'Black crop hood with Criminal Damage branding on the chest and long drawstring.\r\n\xa0\r\n\u2022 Long drawstring\r\n\u2022 cropped hoodie with long sleeces\r\n\xa0\r\n100% cotton\r\n\xa0\r\nModel is wearing size S',
+ 'gender': 'WOMEN',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735069.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735067.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735072.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735078.jpg'],
+ 'mrp': 35.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 35.0,
+ 'sizes': None,
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15482',
+ 'styleName': u'Clapton Crop Hood - Black',
+ 'url': 'https://www.criminaldamage.co.uk/clapton-crop-hood-black.html'}
+2018-03-22 17:05:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/disrupt-bag-pink-camo.html> (referer: https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:05:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/disrupt-bag-pink-camo.html>
+{'articleType': u'Bags',
+ 'brand': '',
+ 'category': u'Bags',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/p/i/pink-camo1_1.jpg',
+ 'description': u'Faux suede rucksack in camo print\r\n\xa0\r\n\u2022 Faux suede fabric\r\n\u2022 Reinforced grab handle\r\n\u2022 Padded straps and back for comfort\r\n\u2022 External pocket\r\n\u2022 Hidden external pocket key snap hook\r\n\xa0\r\n\u2022 100% polyester',
+ 'gender': 'UNISEX',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/p/i/pink-camo1_1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/p/i/pink-camo-back-2.jpg'],
+ 'mrp': 30.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 30.0,
+ 'sizes': None,
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '13146',
+ 'styleName': u'Disrupt Bag - Pink/Camo',
+ 'url': 'https://www.criminaldamage.co.uk/disrupt-bag-pink-camo.html'}
+2018-03-22 17:05:28 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-22 17:05:28 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 13626,
+ 'downloader/request_count': 27,
+ 'downloader/request_method_count/GET': 27,
+ 'downloader/response_bytes': 437102,
+ 'downloader/response_count': 27,
+ 'downloader/response_status_count/200': 27,
+ 'dupefilter/filtered': 4,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 22, 11, 35, 28, 961984),
+ 'item_scraped_count': 8,
+ 'log_count/DEBUG': 37,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 3,
+ 'response_received_count': 27,
+ 'scheduler/dequeued': 27,
+ 'scheduler/dequeued/memory': 27,
+ 'scheduler/enqueued': 27,
+ 'scheduler/enqueued/memory': 27,
+ 'start_time': datetime.datetime(2018, 3, 22, 11, 35, 16, 888744)}
+2018-03-22 17:05:28 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-03-22 17:06:12 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-22 17:06:12 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 17:06:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-22 17:06:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-22 17:06:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-22 17:06:12 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-03-22 17:06:12 [scrapy.core.engine] INFO: Spider opened
+2018-03-22 17:06:12 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-22 17:06:12 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-03-22 17:06:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/> (referer: None)
+2018-03-22 17:06:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:06:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:06:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:06:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:06:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:06:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:06:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 17:06:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 17:06:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/denim.html)
+2018-03-22 17:06:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/denim.html)
+2018-03-22 17:06:17 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.criminaldamage.co.uk/carter-jean-blue-wash.html> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-03-22 17:06:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 17:06:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 17:06:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html)
+2018-03-22 17:06:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 17:06:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html)
+2018-03-22 17:06:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 17:06:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/accessories/bags.html)
+2018-03-22 17:06:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/accessories/bags.html)
+2018-03-22 17:06:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/cali-ls-top.html> (referer: https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:06:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/cali-ls-top.html>
+{'articleType': u'Shop All',
+ 'brand': '',
+ 'category': u'Shop All',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/a/calils_top_fullbody_1.jpg',
+ 'description': u"Yellow long sleeve top with photo palm print and side stripe on both sleeves.\n\xa0\n\u2022 Regular fit\n\u2022 Round Neck\n\u2022 front photo print\n\u2022 Red branding on the sleeves\n\xa0\n\u2022 100% cotton\nModel is wearing size M\nModel's height: 5'9\xa0(180cm)",
+ 'gender': 'MENS',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/cali_ls_top_close_up_front_1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/calils_top_fullbody_1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/cali_ls_top_close_up_back_1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/calils_top_close_up_1.jpg'],
+ 'mrp': 35.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 35.0,
+ 'sizes': ['Size', 'XS ', 'S ', 'M ', 'L ', 'XL '],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15865',
+ 'styleName': u'Cali LS Top',
+ 'url': 'https://www.criminaldamage.co.uk/cali-ls-top.html'}
+2018-03-22 17:06:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/thorn-hood-black-multi.html> (referer: https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2)
+2018-03-22 17:06:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/thorn-hood-black-multi.html>
+{'articleType': u'Shop All',
+ 'brand': '',
+ 'category': u'Shop All',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/t/h/thorn-hood-3.jpg',
+ 'description': u"\u2022 Rose print around neck\n\u2022 Embossed logo\n\u2022 Regular fit\n\xa0\n100% cotton\n\xa0\nModel is wearing size M\nModel's height: 6'0\xa0(182cm)",
+ 'gender': 'MENS',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/t/h/thorn-hood-4.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/t/h/thorn-hood-2.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/t/h/thorn-hood-3.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/t/h/thorn-hood-1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/w/i/wipper-skinny-black.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/b/l/black-front.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/b/l/black-skinny.jpg'],
+ 'mrp': 60.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2',
+ 'rank': 61,
+ 'run_date': '2018-03-22',
+ 'selling_price': 60.0,
+ 'sizes': ['Size', 'XS ', 'S ', 'M ', 'XL ', 'XXL '],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15067',
+ 'styleName': u'Thorn Hood - Black/Multi',
+ 'url': 'https://www.criminaldamage.co.uk/thorn-hood-black-multi.html'}
+2018-03-22 17:06:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/carter-jean-blue-wash.html> (referer: https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:06:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/carter-jean-blue-wash.html>
+{'articleType': u'Denim',
+ 'brand': '',
+ 'category': u'Denim',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/a/carter-blue-close-up.jpg',
+ 'description': u"PREMIUM range jeans distressed at knee and thigh. Chopper/logo embossed silver rivets and button, with synthetic waistband logo.\n\xa0\n\u2022 Men's cut\n\u2022 Branded silver button and rivets\n\u2022 Zipper fly\n\u2022 Stretch fit\n\xa0\n65% cotton 33% Polyester 2% elastane\n\xa0\nModel is wearing: EU-size 32\nModels height: 6'1\xa0(185cm)",
+ 'gender': 'MENS',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/carter-blue-front.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/carter-blue-close-up.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/carter-blue-side.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/carter-blue-back.jpg'],
+ 'mrp': 65.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 65.0,
+ 'sizes': ['Size', '28R', '30R', '32R', '34R', '36R', '38R'],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15087',
+ 'styleName': u'Carter Jeans - Blue Wash',
+ 'url': 'https://www.criminaldamage.co.uk/carter-jean-blue-wash.html'}
+2018-03-22 17:06:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/dalson-crop-hood.html> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:06:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/dalson-crop-hood.html>
+{'articleType': u'New Arrivals',
+ 'brand': '',
+ 'category': u'New Arrivals',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/r/criminal_damage_21111735033.jpg',
+ 'description': u'Black crop hood with Criminal Damage branding on the right sleeve and long drawstring.\n\xa0\n\u2022 Long drawstring\n\u2022 Long sleeces\n\u2022 Yellow stripe\n\xa0\n100% cotton\n\xa0\nModel is wearing size S',
+ 'gender': 'WOMEN',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735033.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735044.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735039.jpg'],
+ 'mrp': 40.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 40.0,
+ 'sizes': ['Size', 'XS ', 'S ', 'M ', 'L ', 'XL ', 'XXL '],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15489',
+ 'styleName': u'Dalson Crop Hood - Black/Yellow',
+ 'url': 'https://www.criminaldamage.co.uk/dalson-crop-hood.html'}
+2018-03-22 17:06:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/clapton-crop-hood-black.html> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:06:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/clapton-crop-hood-black.html>
+{'articleType': u'Shop All',
+ 'brand': '',
+ 'category': u'Shop All',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/r/criminal_damage_21111735069.jpg',
+ 'description': u'Black crop hood with Criminal Damage branding on the chest and long drawstring.\n\xa0\n\u2022 Long drawstring\n\u2022 cropped hoodie with long sleeces\n\xa0\n100% cotton\n\xa0\nModel is wearing size S',
+ 'gender': 'WOMEN',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735069.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735067.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735072.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735078.jpg'],
+ 'mrp': 35.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 35.0,
+ 'sizes': ['Size', 'XS ', 'S ', 'M ', 'L ', 'XL ', 'XXL '],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15482',
+ 'styleName': u'Clapton Crop Hood - Black',
+ 'url': 'https://www.criminaldamage.co.uk/clapton-crop-hood-black.html'}
+2018-03-22 17:06:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/disrupt-cap-pink.html> (referer: https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:06:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/disrupt-cap-pink.html>
+{'articleType': u'Caps',
+ 'brand': '',
+ 'category': u'Caps',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/d/cd_11jan17-357.jpg',
+ 'description': u'Camouflage print cap featuring Criminal Damage faux leather tab at the front\n\xa0\n\u2022 Adjustable size\n\u2022 Rubbery faux suede material\n\u2022 Curved peak\n\u2022 Snapback strap\n\xa0\n100% Polyester',
+ 'gender': 'UNISEX',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/d/cd_11jan17-357.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/d/cd_11jan17-358.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/d/cd_11jan17-359.jpg'],
+ 'mrp': 15.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 15.0,
+ 'sizes': ['Size', 'One Size'],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '13435',
+ 'styleName': u'Disrupt Cap - Pink/Camo',
+ 'url': 'https://www.criminaldamage.co.uk/disrupt-cap-pink.html'}
+2018-03-22 17:06:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/orie-hood-black-14774.html> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=2)
+2018-03-22 17:06:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/orie-hood-black-14774.html>
+{'articleType': u'Shop All',
+ 'brand': '',
+ 'category': u'Shop All',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/r/criminal_damage_21111735609.jpg',
+ 'description': u"Orie Hood - Black\n\xa0\n\u2022 Embroidered dragon print on back\n\u2022 White Criminal Damage logo on chest\n\u2022 Regular fit\n\xa0\n100% cotton\n\xa0\nModel is wearing size M\nModel's height: 5'9\xa0(160cm)",
+ 'gender': 'WOMEN',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735609.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735608.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735600.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735595.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/b/l/black-front.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/b/l/black-skinny.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/w/i/wipper-skinny-black.jpg'],
+ 'mrp': 55.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=2',
+ 'rank': 61,
+ 'run_date': '2018-03-22',
+ 'selling_price': 55.0,
+ 'sizes': ['Size', 'XS ', 'S ', 'M ', 'L ', 'XL '],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '14683',
+ 'styleName': u'Orie Hood - Black',
+ 'url': 'https://www.criminaldamage.co.uk/orie-hood-black-14774.html'}
+2018-03-22 17:06:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/disrupt-bag-pink-camo.html> (referer: https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:06:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/disrupt-bag-pink-camo.html>
+{'articleType': u'Bags',
+ 'brand': '',
+ 'category': u'Bags',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/p/i/pink-camo1_1.jpg',
+ 'description': u'Faux suede rucksack in camo print\n\xa0\n\u2022 Faux suede fabric\n\u2022 Reinforced grab handle\n\u2022 Padded straps and back for comfort\n\u2022 External pocket\n\u2022 Hidden external pocket key snap hook\n\xa0\n\u2022 100% polyester',
+ 'gender': 'UNISEX',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/p/i/pink-camo1_1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/p/i/pink-camo-back-2.jpg'],
+ 'mrp': 30.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 30.0,
+ 'sizes': ['Size', 'One Size'],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '13146',
+ 'styleName': u'Disrupt Bag - Pink/Camo',
+ 'url': 'https://www.criminaldamage.co.uk/disrupt-bag-pink-camo.html'}
+2018-03-22 17:06:21 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-22 17:06:21 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 13626,
+ 'downloader/request_count': 27,
+ 'downloader/request_method_count/GET': 27,
+ 'downloader/response_bytes': 433463,
+ 'downloader/response_count': 27,
+ 'downloader/response_status_count/200': 27,
+ 'dupefilter/filtered': 4,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 22, 11, 36, 21, 896255),
+ 'item_scraped_count': 8,
+ 'log_count/DEBUG': 37,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 3,
+ 'response_received_count': 27,
+ 'scheduler/dequeued': 27,
+ 'scheduler/dequeued/memory': 27,
+ 'scheduler/enqueued': 27,
+ 'scheduler/enqueued/memory': 27,
+ 'start_time': datetime.datetime(2018, 3, 22, 11, 36, 12, 769653)}
+2018-03-22 17:06:21 [scrapy.core.engine] INFO: Spider closed (finished)
+2018-03-22 17:07:10 [scrapy.utils.log] INFO: Scrapy 1.3.3 started (bot: myntraretail)
+2018-03-22 17:07:10 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'myntraretail.spiders', 'SPIDER_MODULES': ['myntraretail.spiders'], 'BOT_NAME': 'myntraretail', 'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 OPR/45.0.2552.888', 'LOG_FILE': 'scrapy.log', 'DOWNLOAD_DELAY': 0.2}
+2018-03-22 17:07:10 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2018-03-22 17:07:10 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-03-22 17:07:10 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-03-22 17:07:10 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-03-22 17:07:10 [scrapy.core.engine] INFO: Spider opened
+2018-03-22 17:07:10 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-03-22 17:07:10 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6024
+2018-03-22 17:07:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/> (referer: None)
+2018-03-22 17:07:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:07:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:07:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:07:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:07:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:07:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html> (referer: https://www.criminaldamage.co.uk/)
+2018-03-22 17:07:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 17:07:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/all.html)
+2018-03-22 17:07:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/mens/denim.html)
+2018-03-22 17:07:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/mens/denim.html)
+2018-03-22 17:07:15 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://www.criminaldamage.co.uk/carter-jean-blue-wash.html> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2018-03-22 17:07:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 17:07:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html)
+2018-03-22 17:07:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html)
+2018-03-22 17:07:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 17:07:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html)
+2018-03-22 17:07:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/accessories/hats.html)
+2018-03-22 17:07:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=1> (referer: https://www.criminaldamage.co.uk/accessories/bags.html)
+2018-03-22 17:07:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=2> (referer: https://www.criminaldamage.co.uk/accessories/bags.html)
+2018-03-22 17:07:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/thorn-hood-black-multi.html> (referer: https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2)
+2018-03-22 17:07:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/thorn-hood-black-multi.html>
+{'articleType': u'Shop All',
+ 'brand': '',
+ 'category': u'Shop All',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/t/h/thorn-hood-3.jpg',
+ 'description': u"\u2022 Rose print around neck\n\u2022 Embossed logo\n\u2022 Regular fit\n\xa0\n100% cotton\n\xa0\nModel is wearing size M\nModel's height: 6'0\xa0(182cm)",
+ 'gender': 'MENS',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/t/h/thorn-hood-4.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/t/h/thorn-hood-2.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/t/h/thorn-hood-3.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/t/h/thorn-hood-1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/w/i/wipper-skinny-black.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/b/l/black-front.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/b/l/black-skinny.jpg'],
+ 'mrp': 60.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=2',
+ 'rank': 61,
+ 'run_date': '2018-03-22',
+ 'selling_price': 60.0,
+ 'sizes': ['XS ', 'S ', 'M ', 'XL ', 'XXL '],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15067',
+ 'styleName': u'Thorn Hood - Black/Multi',
+ 'url': 'https://www.criminaldamage.co.uk/thorn-hood-black-multi.html'}
+2018-03-22 17:07:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/carter-jean-blue-wash.html> (referer: https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:07:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/carter-jean-blue-wash.html>
+{'articleType': u'Denim',
+ 'brand': '',
+ 'category': u'Denim',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/a/carter-blue-close-up.jpg',
+ 'description': u"PREMIUM range jeans distressed at knee and thigh. Chopper/logo embossed silver rivets and button, with synthetic waistband logo.\n\xa0\n\u2022 Men's cut\n\u2022 Branded silver button and rivets\n\u2022 Zipper fly\n\u2022 Stretch fit\n\xa0\n65% cotton 33% Polyester 2% elastane\n\xa0\nModel is wearing: EU-size 32\nModels height: 6'1\xa0(185cm)",
+ 'gender': 'MENS',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/carter-blue-front.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/carter-blue-close-up.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/carter-blue-side.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/carter-blue-back.jpg'],
+ 'mrp': 65.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/mens/denim.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 65.0,
+ 'sizes': ['28R', '30R', '32R', '34R', '36R', '38R'],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15087',
+ 'styleName': u'Carter Jeans - Blue Wash',
+ 'url': 'https://www.criminaldamage.co.uk/carter-jean-blue-wash.html'}
+2018-03-22 17:07:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/dalson-crop-hood.html> (referer: https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:07:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/dalson-crop-hood.html>
+{'articleType': u'New Arrivals',
+ 'brand': '',
+ 'category': u'New Arrivals',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/r/criminal_damage_21111735033.jpg',
+ 'description': u'Black crop hood with Criminal Damage branding on the right sleeve and long drawstring.\n\xa0\n\u2022 Long drawstring\n\u2022 Long sleeces\n\u2022 Yellow stripe\n\xa0\n100% cotton\n\xa0\nModel is wearing size S',
+ 'gender': 'WOMEN',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735033.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735044.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735039.jpg'],
+ 'mrp': 40.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/womens/new-arrivals-womens.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 40.0,
+ 'sizes': ['XS ', 'S ', 'M ', 'L ', 'XL ', 'XXL '],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15489',
+ 'styleName': u'Dalson Crop Hood - Black/Yellow',
+ 'url': 'https://www.criminaldamage.co.uk/dalson-crop-hood.html'}
+2018-03-22 17:07:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/cali-ls-top.html> (referer: https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/clapton-crop-hood-black.html> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/cali-ls-top.html>
+{'articleType': u'Shop All',
+ 'brand': '',
+ 'category': u'Shop All',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/a/calils_top_fullbody_1.jpg',
+ 'description': u"Yellow long sleeve top with photo palm print and side stripe on both sleeves.\n\xa0\n\u2022 Regular fit\n\u2022 Round Neck\n\u2022 front photo print\n\u2022 Red branding on the sleeves\n\xa0\n\u2022 100% cotton\nModel is wearing size M\nModel's height: 5'9\xa0(180cm)",
+ 'gender': 'MENS',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/cali_ls_top_close_up_front_1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/calils_top_fullbody_1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/cali_ls_top_close_up_back_1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/a/calils_top_close_up_1.jpg'],
+ 'mrp': 35.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/mens/all.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 35.0,
+ 'sizes': ['XS ', 'S ', 'M ', 'L ', 'XL '],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15865',
+ 'styleName': u'Cali LS Top',
+ 'url': 'https://www.criminaldamage.co.uk/cali-ls-top.html'}
+2018-03-22 17:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/clapton-crop-hood-black.html>
+{'articleType': u'Shop All',
+ 'brand': '',
+ 'category': u'Shop All',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/r/criminal_damage_21111735069.jpg',
+ 'description': u'Black crop hood with Criminal Damage branding on the chest and long drawstring.\n\xa0\n\u2022 Long drawstring\n\u2022 cropped hoodie with long sleeces\n\xa0\n100% cotton\n\xa0\nModel is wearing size S',
+ 'gender': 'WOMEN',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735069.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735067.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735072.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735078.jpg'],
+ 'mrp': 35.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 35.0,
+ 'sizes': ['XS ', 'S ', 'M ', 'L ', 'XL ', 'XXL '],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '15482',
+ 'styleName': u'Clapton Crop Hood - Black',
+ 'url': 'https://www.criminaldamage.co.uk/clapton-crop-hood-black.html'}
+2018-03-22 17:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/disrupt-cap-pink.html> (referer: https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/disrupt-cap-pink.html>
+{'articleType': u'Caps',
+ 'brand': '',
+ 'category': u'Caps',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/d/cd_11jan17-357.jpg',
+ 'description': u'Camouflage print cap featuring Criminal Damage faux leather tab at the front\n\xa0\n\u2022 Adjustable size\n\u2022 Rubbery faux suede material\n\u2022 Curved peak\n\u2022 Snapback strap\n\xa0\n100% Polyester',
+ 'gender': 'UNISEX',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/d/cd_11jan17-357.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/d/cd_11jan17-358.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/d/cd_11jan17-359.jpg'],
+ 'mrp': 15.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/accessories/hats.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 15.0,
+ 'sizes': ['One Size'],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '13435',
+ 'styleName': u'Disrupt Cap - Pink/Camo',
+ 'url': 'https://www.criminaldamage.co.uk/disrupt-cap-pink.html'}
+2018-03-22 17:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/orie-hood-black-14774.html> (referer: https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=2)
+2018-03-22 17:07:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.criminaldamage.co.uk/disrupt-bag-pink-camo.html> (referer: https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=1)
+2018-03-22 17:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/orie-hood-black-14774.html>
+{'articleType': u'Shop All',
+ 'brand': '',
+ 'category': u'Shop All',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/c/r/criminal_damage_21111735609.jpg',
+ 'description': u"Orie Hood - Black\n\xa0\n\u2022 Embroidered dragon print on back\n\u2022 White Criminal Damage logo on chest\n\u2022 Regular fit\n\xa0\n100% cotton\n\xa0\nModel is wearing size M\nModel's height: 5'9\xa0(160cm)",
+ 'gender': 'WOMEN',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735609.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735608.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735600.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/c/r/criminal_damage_21111735595.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/b/l/black-front.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/b/l/black-skinny.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/420x/040ec09b1e35df139433887a97daa66f/w/i/wipper-skinny-black.jpg'],
+ 'mrp': 55.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/womens/all-womens.html?is_ajax=1&is_scroll=1&p=2',
+ 'rank': 61,
+ 'run_date': '2018-03-22',
+ 'selling_price': 55.0,
+ 'sizes': ['XS ', 'S ', 'M ', 'L ', 'XL '],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '14683',
+ 'styleName': u'Orie Hood - Black',
+ 'url': 'https://www.criminaldamage.co.uk/orie-hood-black-14774.html'}
+2018-03-22 17:07:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.criminaldamage.co.uk/disrupt-bag-pink-camo.html>
+{'articleType': u'Bags',
+ 'brand': '',
+ 'category': u'Bags',
+ 'colour': '',
+ 'currency': u'GBP',
+ 'defaultImage': u'www.criminaldamage.co.uk/media/catalog/product/p/i/pink-camo1_1.jpg',
+ 'description': u'Faux suede rucksack in camo print\n\xa0\n\u2022 Faux suede fabric\n\u2022 Reinforced grab handle\n\u2022 Padded straps and back for comfort\n\u2022 External pocket\n\u2022 Hidden external pocket key snap hook\n\xa0\n\u2022 100% polyester',
+ 'gender': 'UNISEX',
+ 'imageUrlList': [u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/p/i/pink-camo1_1.jpg',
+                  u'www.criminaldamage.co.uk/media/catalog/product/cache/1/thumbnail/200x/040ec09b1e35df139433887a97daa66f/p/i/pink-camo-back-2.jpg'],
+ 'mrp': 30.0,
+ 'paginatedUrl': 'https://www.criminaldamage.co.uk/accessories/bags.html?is_ajax=1&is_scroll=1&p=1',
+ 'rank': 1,
+ 'run_date': '2018-03-22',
+ 'selling_price': 30.0,
+ 'sizes': ['One Size'],
+ 'source': 'criminaldamage',
+ 'stock': 'In Stock',
+ 'styleId': '13146',
+ 'styleName': u'Disrupt Bag - Pink/Camo',
+ 'url': 'https://www.criminaldamage.co.uk/disrupt-bag-pink-camo.html'}
+2018-03-22 17:07:19 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-03-22 17:07:19 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 13626,
+ 'downloader/request_count': 27,
+ 'downloader/request_method_count/GET': 27,
+ 'downloader/response_bytes': 433523,
+ 'downloader/response_count': 27,
+ 'downloader/response_status_count/200': 27,
+ 'dupefilter/filtered': 4,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 3, 22, 11, 37, 19, 661334),
+ 'item_scraped_count': 8,
+ 'log_count/DEBUG': 37,
+ 'log_count/INFO': 7,
+ 'request_depth_max': 3,
+ 'response_received_count': 27,
+ 'scheduler/dequeued': 27,
+ 'scheduler/dequeued/memory': 27,
+ 'scheduler/enqueued': 27,
+ 'scheduler/enqueued/memory': 27,
+ 'start_time': datetime.datetime(2018, 3, 22, 11, 37, 10, 697576)}
+2018-03-22 17:07:19 [scrapy.core.engine] INFO: Spider closed (finished)
