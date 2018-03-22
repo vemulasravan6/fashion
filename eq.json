@@ -1,4 +1,349 @@
-[
-{"category": "shirts", "sku": "Q23-E900_CHARGED PINK", "description": "DETAILS\n                        A classic button-down with all the makings of a new wardrobe favorite, our essential is cut slightly slimmer than our signature shirt with an inverted pleat at the back for a flattering, tailored look.\n                    \n                     Model Is Wearing A Size Small Model Measurements: Height: 5'11\" Bust: 31\" Waist: 24 100% Silk Dry Clean  Imported \n                    Style: #Q23-E900", "run_date": "2018-03-08", "sizes": "", "url": "https://www.equipmentfr.com/shop/shirts/essential-silk-shirt-charged-pink", "gender": "Womens", "brand": "EquipmentFR", "selling_price": 228.0, "paginatedUrl": "https://www.equipmentfr.com/shop/shirts?p=1", "mrp": 228.0, "rank": 1, "currency": "USD", "source": "EquipmentFR", "styleId": "Q23-E900", "defaultImage": "https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/633x/040ec09b1e35df139433887a97daa66f/1/8/18-1-q23-e900_chargedpink_31803_category.jpg", "imageUrlList": ["https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31803_category.jpg", "https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31781.jpg", "https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31787.jpg", "https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31774.jpg", "https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/1/8/18-1-q23-e900_chargedpink_31795.jpg"], "styleName": "ESSENTIAL SILK SHIRT", "stock": "In stock", "colour": "CHARGED PINK", "articleType": "Shirts"},
-{"category": "shirts", "sku": "18-1-001663-E570_BRIGHT WHITE", "description": "DETAILS\n                        This simple silk cami is subtle enough to go with everything you own but still delicate  enough to flatter in all the right ways. A poppy field print brings spring into the mix\u2014making it the perfect separate to brighten up any look. \n                    \n                     Model Is Wearing A Size Small Model Measurements: Height: 5'11\" Bust: 31\" Waist: 24 100% Silk Dry Clean  Imported \n                    Style: #18-1-001663-E570", "run_date": "2018-03-08", "sizes": "", "url": "https://www.equipmentfr.com/shop/shirts/layla-silk-cami-bright-white-new-spring", "gender": "Womens", "brand": "EquipmentFR", "selling_price": 118.0, "paginatedUrl": "https://www.equipmentfr.com/shop/shirts?p=1", "mrp": 118.0, "rank": 2, "currency": "USD", "source": "EquipmentFR", "styleId": "18-1-001663-E570", "defaultImage": "https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/633x/040ec09b1e35df139433887a97daa66f/q/0/q099-e570_brightwhite_25476.jpg", "imageUrlList": ["https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_25476.jpg", "https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_25486.jpg", "https://www.equipmentfr.com/media/catalog/product/cache/1/thumbnail/149x250/9df78eab33525d08d6e5fb8d27136e95/q/0/q099-e570_brightwhite_category.jpg"], "styleName": "LAYLA SILK CAMI", "stock": "In stock", "colour": "BRIGHT WHITE", "articleType": "Shirts"}
-]
+{
+	"path": "/blugirl-ss17/bateau-neckline-long-sleeve-cropped-sweater",
+	"fullpath": "/blugirl-ss17/bateau-neckline-long-sleeve-cropped-sweater",
+	"constants": {
+		"current_user": null,
+		"ab_tests": ["SHIPPING_TEST", "RECOMMENDATIONS"],
+		"is_gender_disabled": true,
+		"gender_map": {
+			"0": "women",
+			"1": "men",
+			"2": "children",
+			"3": "home"
+		},
+		"gender_preference": null
+	},
+	"data": {
+		"data": [{
+			"id": "156003",
+			"type": "variants",
+			"attributes": {
+				"filter_colors": ["white"],
+				"searchable_materials": [],
+				"category": ["CLOTHING"],
+				"subcategory": ["TOPS"],
+				"designer_names": ["Blugirl"],
+				"name": "Bateau Neckline Long Sleeve Cropped Sweater",
+				"product_id": 568677,
+				"variant_id": "156003",
+				"styles": [],
+				"season": "SS17",
+				"sizes": [],
+				"color": "white",
+				"document_type": 1,
+				"trunkshow_ids": [5970],
+				"look_ids": [110677],
+				"designer_slug": "blugirl",
+				"slug": "bateau-neckline-long-sleeve-cropped-sweater",
+				"availability": 4,
+				"designer_name_slug": "Blugirl:blugirl",
+				"designer_season_slug": "blugirl-ss17",
+				"shop_attributes": ["category=clothing"],
+				"trunkshow_names": [],
+				"trunkshow_slugs": [],
+				"material_name_slugs": [],
+				"material_slugs": [],
+				"rec_id": [],
+				"collections": [],
+				"genders": [0],
+				"category_tree": ["women:CLOTHING:TOPS"],
+				"retail_price_usd": 385.0,
+				"retail_price_eur": 345.0,
+				"retail_price_gbp": 295.0,
+				"retail_price_asia": 385.0,
+				"retail_price_me": 385.0,
+				"retail_price_hkd": 3010.0,
+				"retail_price_cad": 485.0,
+				"retail_price_cny": 2590.0,
+				"retail_price_aud": 485.0,
+				"retail_price_aed": 1415.0,
+				"markdown_price_usd": 151.0,
+				"markdown_price_gbp": 116.0,
+				"markdown_price_eur": 135.0,
+				"markdown_price_asia": 151.0,
+				"markdown_price_me": 151.0,
+				"markdown_price_hkd": 1174.0,
+				"markdown_price_cad": 190.0,
+				"markdown_price_cny": 1011.0,
+				"markdown_price_aud": 190.0,
+				"markdown_price_aed": 552.0,
+				"details": {
+					"customization_parameters": null,
+					"fit_brand": "* Model is wearing a sample size IT 40 (equivalent to US 4)\n* This style fits true to Italian sizing\n* We suggest taking your normal size",
+					"fit_model": "",
+					"shipping_restrictions": {
+						"+": [],
+						"-": []
+					},
+					"return_policy": 2,
+					"customer_delivery_notes": null
+				},
+				"variants_data": [{
+					"id": "156003",
+					"href": "/blugirl-ss17/bateau-neckline-long-sleeve-cropped-sweater",
+					"color": "white",
+					"mapped_color": {
+						"name": "white",
+						"filter_color": "white"
+					},
+					"color_swatch_image_url": null,
+					"sold_out": true,
+					"available_sizes": [{
+						"total_available": 0,
+						"total_on_order": 0,
+						"sku": "1056147",
+						"size": "IT 36"
+					}, {
+						"total_available": 0,
+						"total_on_order": 0,
+						"sku": "1056148",
+						"size": "IT 38"
+					}, {
+						"total_available": 0,
+						"total_on_order": 0,
+						"sku": "1056149",
+						"size": "IT 40"
+					}, {
+						"total_available": 0,
+						"total_on_order": 0,
+						"sku": "1056150",
+						"size": "IT 42"
+					}, {
+						"total_available": 0,
+						"total_on_order": 0,
+						"sku": "1056151",
+						"size": "IT 44"
+					}, {
+						"total_available": 0,
+						"total_on_order": 0,
+						"sku": "1056152",
+						"size": "IT 46"
+					}, {
+						"total_available": 0,
+						"total_on_order": 0,
+						"sku": "1056153",
+						"size": "IT 48"
+					}, {
+						"total_available": 0,
+						"total_on_order": 0,
+						"sku": "1056154",
+						"size": "IT 50"
+					}],
+					"total_on_hand": null,
+					"primary_image_urls": {
+						"small_url": "https://assets11.modaoperandi.com/images/products/568677/156003/small_blugirl-white-bateau-neckline-long-sleeve-cropped-sweater.jpg?_t=1514581355",
+						"medium_url": "https://assets11.modaoperandi.com/images/products/568677/156003/medium_blugirl-white-bateau-neckline-long-sleeve-cropped-sweater.jpg?_t=1514581355",
+						"large_url": "https://assets11.modaoperandi.com/images/products/568677/156003/large_blugirl-white-bateau-neckline-long-sleeve-cropped-sweater.jpg?_t=1514581355"
+					},
+					"alternate_image_urls": [{
+						"small_url": "https://assets11.modaoperandi.com/images/products/568677/156003/b/small_blugirl-white-bateau-neckline-long-sleeve-cropped-sweater.jpg?_v=1514581355",
+						"medium_url": "https://assets11.modaoperandi.com/images/products/568677/156003/b/medium_blugirl-white-bateau-neckline-long-sleeve-cropped-sweater.jpg?_v=1514581355",
+						"large_url": "https://assets11.modaoperandi.com/images/products/568677/156003/b/large_blugirl-white-bateau-neckline-long-sleeve-cropped-sweater.jpg?_v=1514581355"
+					}, {
+						"small_url": "https://assets11.modaoperandi.com/images/products/568677/156003/f/small_blugirl-white-bateau-neckline-long-sleeve-cropped-sweater.jpg?_v=1514581355",
+						"medium_url": "https://assets11.modaoperandi.com/images/products/568677/156003/f/medium_blugirl-white-bateau-neckline-long-sleeve-cropped-sweater.jpg?_v=1514581355",
+						"large_url": "https://assets11.modaoperandi.com/images/products/568677/156003/f/large_blugirl-white-bateau-neckline-long-sleeve-cropped-sweater.jpg?_v=1514581355"
+					}, {
+						"small_url": "https://assets11.modaoperandi.com/images/products/568677/156003/z/small_blugirl-white-bateau-neckline-long-sleeve-cropped-sweater.jpg?_v=1514581355",
+						"medium_url": "https://assets11.modaoperandi.com/images/products/568677/156003/z/medium_blugirl-white-bateau-neckline-long-sleeve-cropped-sweater.jpg?_v=1514581355",
+						"large_url": "https://assets11.modaoperandi.com/images/products/568677/156003/z/large_blugirl-white-bateau-neckline-long-sleeve-cropped-sweater.jpg?_v=1514581355"
+					}],
+					"prices": {
+						"currency": "USD",
+						"current_price": {
+							"human": "385",
+							"price": "385.0",
+							"currency": "usd",
+							"currency_html_code": "$"
+						},
+						"original_price": null,
+						"deposit_price": null
+					},
+					"return_policy_copy": "Not eligible for return",
+					"delivery_starts_on": "2017-03-15T00:00:00-04:00",
+					"delivery_ends_on": "2017-05-29T00:00:00-04:00",
+					"expected_shipping_copy": null,
+					"mixed_inventory_shipping_copy": "(Preorder)",
+					"show_holiday_schedule": false
+				}],
+				"has_inventory": true,
+				"new_arrival_on_i": 1475550000,
+				"active_start_i": 1475553600,
+				"active_end_i": 1519189200,
+				"source": 3,
+				"is_master": true,
+				"sellable_start_i": 1475553600,
+				"sellable_end_i": 1519189200,
+				"sell_through": 0,
+				"is_public": true,
+				"trunkshow_start_is": [1475550000],
+				"trunkshow_end_is": [1476453600],
+				"fulfilment_type": 0,
+				"is_presell": false,
+				"is_presell_instock": false,
+				"customer_delivery_notes": null,
+				"return_policy": 2,
+				"updated_at_i": 1514581355,
+				"is_exploded": true,
+				"trunkshow_private_until": 0,
+				"restricted": false,
+				"active_in_shop": true,
+				"active_in_search": false,
+				"markdown_level": 50,
+				"markdown_percentage": "61.0",
+				"active_start_for_trunkshow_i": 1475550000,
+				"active_end_for_trunkshow_i": 1476453600,
+				"customizable": false,
+				"sold_out": true,
+				"payment_type": "FULL",
+				"size_scale": "Womens/Clothing/IT 36-52",
+				"inventory_available": 0,
+				"season_name": "Spring Summer",
+				"sale": "sale",
+				"all_trunkshow_slugs": ["blugirl-ss17"],
+				"size_range": ["IT 36", "IT 38", "IT 40", "IT 42", "IT 44", "IT 46", "IT 48", "IT 50"],
+				"active_for_hash": {
+					"trunkshow": [5970]
+				},
+				"restricted_trunkshow_ids": [],
+				"description": "This **Blugirl** Bateau Neckline Long Sleeve Cropped Sweater features a boat neckline, long sleeves, and a cropped hemline with stripe and ruffle detail.",
+				"detail_bullets": "&lt;ul&gt;\n&lt;li&gt;Long sleeve&lt;/li&gt;\n&lt;li&gt;Cropped silhouette&lt;/li&gt;\n&lt;li&gt;Pullover style&lt;/li&gt;\n&lt;li&gt;Composition: 100%cotton&lt;/li&gt;\n&lt;li&gt;Color: white&lt;/li&gt;\n&lt;li&gt;Unlined&lt;/li&gt;\n&lt;li&gt;Made in Italy&lt;/li&gt;\n&lt;/ul&gt;\n",
+				"inventory": true,
+				"is_variant": false,
+				"available": false,
+				"prices": {
+					"currency": "USD",
+					"current_price": {
+						"human": "151",
+						"price": "151.0",
+						"currency": "usd",
+						"currency_html_code": "$"
+					},
+					"original_price": {
+						"human": "385",
+						"price": "385.0",
+						"currency": "usd",
+						"currency_html_code": "$"
+					},
+					"deposit_price": null
+				},
+				"countdown_value": null,
+				"countdown_available": false,
+				"current_request_settings": "#&lt;Site::RequestEnvironment::CurrentRequestSettings:0x00000011ff0b20&gt;",
+				"latest_trunkshow_id": null,
+				"latest_trunkshow_restricted": false,
+				"is_boutique": true,
+				"total_inventory_available": 0,
+				"title_bar": {
+					"category_name": "Clothing",
+					"category_url": "/shop/clothing",
+					"subcategory_name": "Tops",
+					"subcategory_url": "/shop/clothing/tops"
+				},
+				"trunkshow_id": 5970,
+				"trunkshow_url": "/blugirl-ss17",
+				"active_start_i_for_trunkshow": 1475550000,
+				"active_end_i_for_trunkshow": 1476453600,
+				"shipping_restrictions_text": null,
+				"fit_model": null,
+				"fit_brand": "&lt;ul&gt;\n&lt;li&gt;Model is wearing a sample size IT 40 (equivalent to US 4)&lt;/li&gt;\n&lt;li&gt;This style fits true to Italian sizing&lt;/li&gt;\n&lt;li&gt;We suggest taking your normal size&lt;/li&gt;\n&lt;/ul&gt;\n",
+				"designer_url": "/blugirl",
+				"low_inventory": 0,
+				"trunkshow_expired": true,
+				"description_html": "&lt;p&gt;This &lt;strong&gt;Blugirl&lt;/strong&gt; Bateau Neckline Long Sleeve Cropped Sweater features a boat neckline, long sleeves, and a cropped hemline with stripe and ruffle detail.&lt;/p&gt;\n",
+				"section_affinity": "boutique",
+				"gender": "women",
+				"gender_url": "/women",
+				"position": 1
+			},
+			"relationships": {
+				"pdp_details": {
+					"data": {
+						"id": "156003",
+						"type": "pdp_details"
+					}
+				}
+			}
+		}],
+		"included": [{
+			"id": "156003",
+			"type": "pdp_details",
+			"attributes": {
+				"slug": "bateau-neckline-long-sleeve-cropped-sweater",
+				"designer_season_slug": "blugirl-ss17",
+				"size_chart": {
+					"chart": {
+						"SIZE_SCALE": ["IT 36", "IT 38", "IT 40", "IT 42", "IT 44", "IT 46", "IT 48", "IT 50", "IT 52"],
+						"US": ["US 0", "US 2", "US 4", "US 6", "US 8", "US 10", "US 12", "US 14", "US 16"],
+						"FR": ["FR 32", "FR 34", "FR 36", "FR 38", "FR 40", "FR 42", "FR 44", "FR 46", "FR 48"],
+						"IT": ["IT 36", "IT 38", "IT 40", "IT 42", "IT 44", "IT 46", "IT 48", "IT 50", "IT 52"],
+						"AU": ["AU 4", "AU 6", "AU 8", "AU 10", "AU 12", "AU 14", "AU 16", "AU 18", "AU 20"],
+						"UK": ["UK 4", "UK 6", "UK 8", "UK 10", "UK 12", "UK 14", "UK 16", "UK 18", "UK 20"],
+						"EU": ["EU 30", "EU 32", "EU 34", "EU 36", "EU 38", "EU 40", "EU 42", "EU 44", "EU 46"]
+					},
+					"size_scale": "Womens/Clothing/IT 36-52",
+					"country_code_or_key": "IT",
+					"selected_country_code": "US"
+				},
+				"email_share_data": {
+					"image_primary_url": "https://assets11.modaoperandi.com/images/products/568677/156003/medium_blugirl-white-bateau-neckline-long-sleeve-cropped-sweater.jpg?_t=1514581355",
+					"image_error_url": "https://assets1.modaoperandi.com/assets/image_coming_soon-bc35778417370fbe7ba34073d1efa98fbe2713950414c46428ce9ab6610c606d.png",
+					"designer_href": "/blugirl",
+					"designer_name": "Blugirl",
+					"product_name": "Bateau Neckline Long Sleeve Cropped Sweater",
+					"payment_type": "FULL",
+					"product_path": "/blugirl-ss17/bateau-neckline-long-sleeve-cropped-sweater",
+					"product_share_by_email_path": "/products/share_by_email",
+					"heading_label": "Drop a Hint! Share This Item.",
+					"deposit_text_label": "deposit",
+					"sender_name_label": "Your name*",
+					"sender_email_label": "Your email*",
+					"recipient_email_label": "Recipient&#39;s Email*",
+					"subject_label": "Subject",
+					"message_label": "Message",
+					"sender_name_error": "Enter Sender&#39;s name",
+					"sender_email_error": "Enter Sender&#39;s email",
+					"recipient_email_error": "Enter Recipient&#39;s Email address",
+					"subject_value": "Hint, hint: your friend likes something from Moda Operandi",
+					"message_value": "I thought you might be interested in this item I love from Moda Operandi.",
+					"sender_name_value": "",
+					"sender_email_value": "",
+					"retail_price": "$151.00",
+					"discounted_price": "$385"
+				},
+				"liked": false,
+				"utag_data": {
+					"page_type": "product",
+					"product_id": "568677",
+					"product_name": "Bateau Neckline Long Sleeve Cropped Sweater",
+					"product_color": "white",
+					"designer_name": "Blugirl",
+					"product_original_price": "385.0",
+					"product_unit_price": "151.0",
+					"page_name": "catalog:shop:Blugirl-boutique:568677",
+					"hier1": "Boutique Product Page",
+					"hier3": "Boutique Page",
+					"product_site_section": "boutique",
+					"product_type": ["boutique"],
+					"trunkshow_name": "Boutique"
+				}
+			}
+		}],
+		"meta": {
+			"pagination": {
+				"total_pages": 1,
+				"current_page": 0,
+				"next_page": 1,
+				"previous_page": null,
+				"per_page": 20,
+				"total_entries": 1
+			}
+		}
+	},
+	"params": {
+		"controller": "products",
+		"action": "show",
+		"designer_season_slug": "blugirl-ss17",
+		"slug": "bateau-neckline-long-sleeve-cropped-sweater"
+	}
+}

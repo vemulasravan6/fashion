@@ -10,14 +10,14 @@ import os
 
 class criminaldamageUkSpider(scrapy.Spider):
     name = conf.SOURCE
-    start_urls = [conf.START_URL]
-    base_url = conf.URL
+    start_urls = ['https://www.criminaldamage.co.uk/']
+    #base_url = conf.URL
 
     def parse(self, response):
         priority = 5000
         #print(response.url)
         for category in  conf.CATEGORIES_GENDER_XPATHS:
-            for url_block in response.xpath(category['XPATH']):
+            for url_block in response.xpath(category['XPATH'])[:2]:
                 url = url_block.xpath(".//a/@href").extract()[0]
                 priority = priority - 1
                 request = scrapy.Request(url=url, callback=self.parseCategoryPage, priority=priority)
@@ -53,7 +53,7 @@ class criminaldamageUkSpider(scrapy.Spider):
         priority = 5000
         input_rank = response.meta['PageNo'] * len(blocks)
 
-        for block in blocks:
+        for block in blocks[:1]:
             priority = priority - 1
             input_rank = input_rank + 1
             pdpUrl  = block.xpath(conf.PRODUCT_URL_INSIDE_BLOCK_XPATH).extract()[0]
